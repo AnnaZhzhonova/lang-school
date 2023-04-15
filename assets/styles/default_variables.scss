@@ -1,0 +1,25 @@
+//Переменные
+$color-blue:#58C8E9;
+$color-pink:#F45B5D;
+$color-gray-light:#DEDCDD;
+$color-gray-dark:#536268;
+
+//Миксины
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    }
+@mixin font-h1{
+    font-family: 'Caudex';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 103px;
+}
+@mixin font-h2{
+    font-family: 'Caudex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+}

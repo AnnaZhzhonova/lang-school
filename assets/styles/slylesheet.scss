@@ -1,0 +1,30 @@
+@import "default_variables";
+
+//общие параметры стилей
+*{
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
