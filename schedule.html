@@ -29,16 +29,16 @@
         <section class="schedule">
           <h2 class="section-title">Расписание</h2>
           <div class="schedule-box">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="schedule-list nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link active"
-                  id="home-tab"
+                  id="german-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#home-tab-pane"
+                  data-bs-target="#german-tab-pane"
                   type="button"
                   role="tab"
-                  aria-controls="home-tab-pane"
+                  aria-controls="german-tab-pane"
                   aria-selected="true"
                 >
                   <img
@@ -51,12 +51,12 @@
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link"
-                  id="profile-tab"
+                  id="english-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#profile-tab-pane"
+                  data-bs-target="#english-tab-pane"
                   type="button"
                   role="tab"
-                  aria-controls="profile-tab-pane"
+                  aria-controls="english-tab-pane"
                   aria-selected="false"
                 >
                   <img
@@ -69,12 +69,12 @@
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link"
-                  id="contact-tab"
+                  id="spanish-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#contact-tab-pane"
+                  data-bs-target="#spanish-tab-pane"
                   type="button"
                   role="tab"
-                  aria-controls="contact-tab-pane"
+                  aria-controls="spanish-tab-pane"
                   aria-selected="false"
                 >
                   <img
@@ -87,12 +87,12 @@
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link"
-                  id="contact-tab"
+                  id="french-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#contact-tab-pane"
+                  data-bs-target="#french-tab-pane"
                   type="button"
                   role="tab"
-                  aria-controls="contact-tab-pane"
+                  aria-controls="french-tab-pane"
                   aria-selected="false"
                 >
                   <img
@@ -105,16 +105,16 @@
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link"
-                  id="contact-tab"
+                  id="japanese-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#contact-tab-pane"
+                  data-bs-target="#japanese-tab-pane"
                   type="button"
                   role="tab"
-                  aria-controls="contact-tab-pane"
+                  aria-controls="japanese-tab-pane"
                   aria-selected="false"
                 >
                   <img
-                    class="schedule-pic"
+                    class="schedule-pic schedule-pic--border"
                     src="assets/images/Japan_flag.svg"
                     alt="japanese"
                   />
@@ -123,12 +123,12 @@
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link"
-                  id="contact-tab"
+                  id="sign-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#contact-tab-pane"
+                  data-bs-target="#sign-tab-pane"
                   type="button"
                   role="tab"
-                  aria-controls="contact-tab-pane"
+                  aria-controls="sign-tab-pane"
                   aria-selected="false"
                 >
                   <img
@@ -142,36 +142,1025 @@
             <div class="tab-content" id="myTabContent">
               <div
                 class="tab-pane fade show active"
-                id="home-tab-pane"
+                id="german-tab-pane"
                 role="tabpanel"
-                aria-labelledby="home-tab"
+                aria-labelledby="german-tab"
+                tabindex="0"
+              >
+                <table class="schedule-table">
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Уровень
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Дни недели и время
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Преподаватели
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Длительность
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        A1.1
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Вторник, 19:30-21:30</p>
+                      <p class="schedule-table__text">
+                        Воскресенье, 11:00-13:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link schedule-table__link--gray"
+                        href="#"
+                        target="_blank"
+                        >Александра Березняцкая</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">60-80 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        A1.1
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Понедельник/пятница, 20:00-22:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link schedule-table__link--pink"
+                        href="#"
+                        target="_blank"
+                        >Митя Гаврилов</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">60-80 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        A1.2
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Понедельник/четверг, 19:00-21:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link schedule-table__link--blue"
+                        href="#"
+                        target="_blank"
+                        >Мария Пряничникова</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">60-80 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        A1.2
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Вторник/четверг, 09:00-11:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link schedule-table__link--blue"
+                        href="#"
+                        target="_blank"
+                        >Мария Пряничникова</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">60-80 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        A1.2
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Среда, 19:30-22:00</p>
+                      <p class="schedule-table__text">
+                        Воскресенье, 11:00-13:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link schedule-table__link--blue"
+                        href="#"
+                        target="_blank"
+                        >Мария Пряничникова</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">60-80 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        A2.1
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Вторник/четверг, 20:00-22:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link"
+                        href="#"
+                        target="_blank"
+                        >Зоя Мелихова</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">60-80 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        B1&plus;
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Четверг 20:00-22:30</p>
+                      <p class="schedule-table__text">
+                        Воскресенье, 16:00-19:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link"
+                        href="#"
+                        target="_blank"
+                        >Алина Долженко</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">60-80 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        B1.2
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Среда/пятница, 20:30-22:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link"
+                        href="#"
+                        target="_blank"
+                        >Максим Лозин</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">60-80 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        B1&plus;
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Среда 20:00-22:30</p>
+                      <p class="schedule-table__text">Суббота 15:30-18:00</p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link"
+                        href="#"
+                        target="_blank"
+                        >Алина Долженко</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">60-80 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        B2.1
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Четверг 13:00-14:30</p>
+                      <p class="schedule-table__text">Пятница 13:00-14:30</p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link"
+                        href="#"
+                        target="_blank"
+                        >Алина Долженко</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">60-80 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        C1
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Суббота 11:30-14:00</p>
+                      <p class="schedule-table__text">
+                        Воскресенье 13:00-15:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link"
+                        href="#"
+                        target="_blank"
+                        >Алина Долженко</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">60-80 ак.ч.</p></td>
+                  </tr>
+                </table>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="english-tab-pane"
+                role="tabpanel"
+                aria-labelledby="english-tab"
+                tabindex="0"
+              >
+                <table class="schedule-table">
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Уровень
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Дни недели и время
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Преподаватели
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Длительность
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Beginner
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Вторник/четверг, 16:00-18:30
+                      </p>
+                    </td>
+
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Андрей Краснояров</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Elementary
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Понедельник/четверг, 19:00-20:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Лиза Вороная</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Elementary
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Среда/воскресенье, 19:30-22:00
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Лиза Вороная</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Pre-Intermediate
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Среда, 09:00-11:30</p>
+                      <p class="schedule-table__text">Пятница, 09:00-11:00</p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Лиза Вороная</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Pre-Intermediate
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Вторник, 19:00-21:30</p>
+                      <p class="schedule-table__text">
+                        Воскресенье, 16:00-18:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Лиза Вороная</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Pre-Intermediate
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Вторник/четверг, 19:30-22:00
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Андрей Краснояров</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Pre-Intermediate
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Вторник/четверг, 19:30-22:00
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Андрей Краснояров</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Intermediate
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Вторник/четверг, 13:00-14:00
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Мария Кузнецова</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Pre-Intermediate
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Четверг, 19:30-22:00</p>
+                      <p class="schedule-table__text">
+                        Воскресенье, 10:00-12:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Лиза Новикова</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Intermediate
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Среда, 19:00-21:30</p>
+                      <p class="schedule-table__text">
+                        Воскресенье, 11:00-13:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Митя Гаврилов</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Intermediate&plus;
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Понедельник/пятница, 19:30-22:00
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Анатолий Долженко</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Intermediate&plus;
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Вторник, 19:30-22:00</p>
+                      <p class="schedule-table__text">Суббота, 11:00-13:30</p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Анатолий Долженко</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Upper-Intermediate
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Четверг, 19:30-22:00</p>
+                      <p class="schedule-table__text">
+                        Воскресенье, 18:00-20:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Анатолий Долженко</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Upper-Intermediate
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Понедельник/среда, 19:30-22:00
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Sam Gottlieb</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Advanced
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Вторник/четверг, 19:30-22:00
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Sam Gottlieb</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Advanced&plus;
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Вторник, 20:00-22:30</p>
+                      <p class="schedule-table__text">
+                        Воскресенье, 17:00-19:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link link"
+                        href="#"
+                        target="_blank"
+                        >Sam Gottlieb</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">160 ак.ч.</p></td>
+                  </tr>
+                </table>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="spanish-tab-pane"
+                role="tabpanel"
+                aria-labelledby="spanish-tab"
+                tabindex="0"
+              >
+                <table class="schedule-table">
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Уровень
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Дни недели и время
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Преподаватели
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Длительность
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        A1.1
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Вторник, 20:00-22:30</p>
+                      <p class="schedule-table__text">
+                        Воскресенье, 15:00-17:30
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link schedule-table__link--blue"
+                        href="#"
+                        target="_blank"
+                        >Роман Пономарев</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">70 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        A2.1
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Среда, 20:00-22:30</p>
+                      <p class="schedule-table__text">
+                        Воскресенье, 18:30-21:00
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link schedule-table__link--blue"
+                        href="#"
+                        target="_blank"
+                        >Роман Пономарев</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">70 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        A2.2
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Понедельник, 19:30-22:00
+                      </p>
+                      <p class="schedule-table__text">Суббота, 15:30-17:30</p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link schedule-table__link--blue"
+                        href="#"
+                        target="_blank"
+                        >Роман Пономарев</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">70 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        B1.1
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Четверг, 20:00-22:30</p>
+                      <p class="schedule-table__text">Суббота, 12:00-14:30</p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link schedule-table__link--blue"
+                        href="#"
+                        target="_blank"
+                        >Роман Пономарев</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">90 ак.ч.</p></td>
+                  </tr>
+                </table>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="french-tab-pane"
+                role="tabpanel"
+                aria-labelledby="french-tab"
+                tabindex="0"
+              >
+                <table class="schedule-table">
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Уровень
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Дни недели и время
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Online/offline
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Преподаватели
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Длительность
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        A1.1
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Вторник, 19:00-21:30</p>
+                      <p class="schedule-table__text">Суббота, 10:30-13:00</p>
+                    </td>
+                    <td><p class="schedule-table__text">Online</p></td>
+                    <td>
+                      <a
+                        class="link schedule-table__link"
+                        href="#"
+                        target="_blank"
+                      ></a>
+                    </td>
+                    <td><p class="schedule-table__text">120 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        A1.2
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Среда, 20:00-22:30</p>
+                      <p class="schedule-table__text">
+                        Воскресенье, 12:30-15:00
+                      </p>
+                    </td>
+                    <td><p class="schedule-table__text">Online</p></td>
+                    <td>
+                      <a
+                        class="link schedule-table__link"
+                        href="#"
+                        target="_blank"
+                        >Ксения Воинова</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">120 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        A2.1
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Четверг, 20:00-22:30</p>
+                      <p class="schedule-table__text">Суббота, 12:30-15:00</p>
+                    </td>
+                    <td><p class="schedule-table__text">Online</p></td>
+                    <td>
+                      <a
+                        class="link schedule-table__link"
+                        href="#"
+                        target="_blank"
+                        >Ксения Воинова</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">120 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        B1.1
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Вторник/пятница, 19:30-22:00
+                      </p>
+                    </td>
+                    <td><p class="schedule-table__text">Offline</p></td>
+                    <td>
+                      <a
+                        class="link schedule-table__link"
+                        href="#"
+                        target="_blank"
+                        >Ксения Воинова</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">120 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        B1.2
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Понедельник, 20:00-21:30
+                      </p>
+                      <p class="schedule-table__text">Суббота, 10:00-11:30</p>
+                    </td>
+                    <td><p class="schedule-table__text">Online</p></td>
+                    <td>
+                      <a
+                        class="link schedule-table__link"
+                        href="#"
+                        target="_blank"
+                        >Ксения Воинова</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">120 ак.ч.</p></td>
+                  </tr>
+                </table>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="japanese-tab-pane"
+                role="tabpanel"
+                aria-labelledby="japanese-tab"
                 tabindex="0"
               >
                 ...
               </div>
               <div
                 class="tab-pane fade"
-                id="profile-tab-pane"
+                id="sign-tab-pane"
                 role="tabpanel"
-                aria-labelledby="profile-tab"
-                tabindex="0"
-              >
-                ...
-              </div>
-              <div
-                class="tab-pane fade"
-                id="contact-tab-pane"
-                role="tabpanel"
-                aria-labelledby="contact-tab"
-                tabindex="0"
-              >
-                ...
-              </div>
-              <div
-                class="tab-pane fade"
-                id="disabled-tab-pane"
-                role="tabpanel"
-                aria-labelledby="disabled-tab"
+                aria-labelledby="sign-tab"
                 tabindex="0"
               >
                 ...
