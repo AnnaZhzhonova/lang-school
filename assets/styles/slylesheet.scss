@@ -28,3 +28,17 @@ img {
   text-decoration: none;
   cursor: pointer;
 }
+.section-title{
+  @include font-h2;
+  position: relative;
+  margin: 46px 0 35px 0;
+}
+.section-title::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+  width: 244px;
+  height: 7px;
+  background-color: $color-pink;
+}
