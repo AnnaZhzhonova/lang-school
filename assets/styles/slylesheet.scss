@@ -90,7 +90,6 @@ img {
 }
 .schedule-table__link{
   display: inline-block;
-  height: 30px;
   padding: 0 10px;
   border-radius: 5px;
   font-family: $font;
@@ -109,4 +108,13 @@ img {
 }
 .schedule-table__link--green{
   background-color: $color-green-light;
+}
+.schedule-table__link--purple{
+  background-color: $color-purple-light;
+}
+.schedule-table__link--yellow{
+  background-color: $color-yellow-light;
+}
+.schedule-table__link--brown{
+  background-color: $color-brown-light;
 }

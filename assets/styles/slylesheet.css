@@ -111,7 +111,6 @@ img {
 
 .schedule-table__link {
   display: inline-block;
-  height: 30px;
   padding: 0 10px;
   border-radius: 5px;
   font-family: "Noto Sans";
@@ -133,5 +132,17 @@ img {
 }
 
 .schedule-table__link--green {
-  background-color: rgba(185, 239, 185, 0.9254901961);
+  background-color: rgba(217, 247, 217, 0.9254901961);
+}
+
+.schedule-table__link--purple {
+  background-color: rgba(246, 217, 248, 0.9254901961);
+}
+
+.schedule-table__link--yellow {
+  background-color: rgba(247, 248, 217, 0.9254901961);
+}
+
+.schedule-table__link--brown {
+  background-color: rgba(204, 150, 150, 0.4705882353);
 }
