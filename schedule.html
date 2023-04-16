@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles/normalize.css" />
@@ -25,8 +25,8 @@
       <div class="container"></div>
     </header>
     <main>
-      <div class="container">
-        <section class="schedule">
+      <section class="schedule">
+        <div class="container">
           <h2 class="section-title">Расписание</h2>
           <div class="schedule-box">
             <ul class="schedule-list nav nav-tabs" id="myTab" role="tablist">
@@ -310,7 +310,7 @@
                     </td>
                     <td>
                       <a
-                        class="link schedule-table__link"
+                        class="link schedule-table__link schedule-table__link--green"
                         href="#"
                         target="_blank"
                         >Зоя Мелихова</a
@@ -1154,7 +1154,60 @@
                 aria-labelledby="japanese-tab"
                 tabindex="0"
               >
-                ...
+                <table class="schedule-table">
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Уровень
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Дни недели и время
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Преподаватели
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Длительность
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        1 уровень
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">Вторник, 19:30-21:30</p>
+                      <p class="schedule-table__text">Пятница, 17:00-19:30</p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link"
+                        href="#"
+                        target="_blank"
+                        >Линь Ву</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">60 ак.ч.</p></td>
+                  </tr>
+                </table>
               </div>
               <div
                 class="tab-pane fade"
@@ -1163,12 +1216,89 @@
                 aria-labelledby="sign-tab"
                 tabindex="0"
               >
-                ...
+                <table class="schedule-table">
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Уровень
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Дни недели и время
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Преподаватели
+                      </p>
+                    </td>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--title"
+                      >
+                        Длительность
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Начальный уровень (online)
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Понедельник/пятница 20:00-22:00
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link"
+                        href="#"
+                        target="_blank"
+                        >Алексей Знаменский</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">120 ак.ч.</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        class="schedule-table__text schedule-table__text--bold"
+                      >
+                        Начальный уровень (offline)
+                      </p>
+                    </td>
+                    <td>
+                      <p class="schedule-table__text">
+                        Вторник/четверг 20:00-22:00
+                      </p>
+                    </td>
+                    <td>
+                      <a
+                        class="link schedule-table__link"
+                        href="#"
+                        target="_blank"
+                        >Алексей Знаменский</a
+                      >
+                    </td>
+                    <td><p class="schedule-table__text">120 ак.ч.</p></td>
+                  </tr>
+                </table>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container"></div>

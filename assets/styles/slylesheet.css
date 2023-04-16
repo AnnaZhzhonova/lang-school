@@ -35,7 +35,7 @@ img {
 }
 
 .section-title {
-  font-family: "Montserrat";
+  font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
@@ -55,16 +55,30 @@ img {
   background-color: #F45B5D;
 }
 
+.schedule {
+  position: relative;
+  height: 1900px;
+  background-image: url(../images/Ellipse-blue.svg), url(../images/Ellipse-pink.svg);
+  background-position: top 0 right 0, bottom 0 left 0;
+  background-repeat: no-repeat;
+}
+
+.schedule-box {
+  margin-top: 90px;
+  padding: 30px 0 0 0;
+  z-index: 1;
+  border: 2px solid #DEDCDD;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
 .schedule-pic {
   height: 53px;
 }
 
 .schedule-pic--border {
   border: 1px solid #DEDCDD;
-}
-
-.schedule-box {
-  margin-top: 90px;
 }
 
 .schedule-list {
@@ -86,7 +100,7 @@ img {
 .schedule-table__text, .schedule-table__link {
   margin: auto;
   padding: 0;
-  font-family: "Montserrat";
+  font-family: "Noto Sans";
   font-weight: 400;
   font-size: 20px;
 }
@@ -100,7 +114,7 @@ img {
   height: 30px;
   padding: 0 10px;
   border-radius: 5px;
-  font-family: "Montserrat";
+  font-family: "Noto Sans";
   font-weight: 400;
   font-size: 20px;
   color: #000;
@@ -116,4 +130,8 @@ img {
 
 .schedule-table__link--blue {
   background-color: rgba(88, 200, 233, 0.25);
+}
+
+.schedule-table__link--green {
+  background-color: rgba(185, 239, 185, 0.9254901961);
 }

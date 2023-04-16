@@ -5,8 +5,9 @@ $color-pink:#F45B5D;
 $color-pink-light:rgba(244, 91, 93, 0.2);
 $color-gray:#536268;
 $color-gray-light:#DEDCDD;
+$color-green-light:#b9efb9ec;
 $black:#000;
-$font: 'Montserrat';
+$font: 'Noto Sans';
 
 //Миксины
 @mixin reset {
@@ -14,14 +15,14 @@ $font: 'Montserrat';
     padding: 0;
     }
 @mixin font-h1{
-    font-family: 'Montserrat';
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
     line-height: 103px;
 }
 @mixin font-h2{
-    font-family: 'Montserrat';
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
