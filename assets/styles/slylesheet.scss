@@ -119,3 +119,77 @@ img {
   background-color: $color-brown-light;
 }
 //О школе
+.about-school{
+  background-image: url(../images/Ellipse-blue.svg),
+  url(../images/Ellipse-pink.svg);
+  background-position: top 0 right 0, bottom 0 left 0;
+  background-repeat: no-repeat;
+}
+.school-content{
+  margin: 60px 0 0 0;
+  p{
+    font-family: $font;
+    font-size: 18px;
+    span{
+      font-weight: 600;
+    }
+    a{
+      font-weight: 600;
+      color: $color-blue;
+    }
+  }
+}
+.school-content__list{
+  list-style-type: none;
+}
+.school-content__item{
+  font-family: $font;
+  font-size: 18px;
+  span{
+    font-weight: 600;
+  }
+}
+@media screen and (max-width:767px) {
+  //Расписание
+  .schedule-pic{
+    height: 33px;
+  }
+  .schedule-table__text, .schedule-table__link{
+    font-size:16px;
+  }
+  .schedule-table{
+    margin: 50px auto;
+    width: 90%;
+    td{
+      padding: 10px 10px;
+    }
+  }
+  .schedule-table__box{
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .schedule-table{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    tbody{
+      width: 100%;
+    }
+    tr{
+      min-width: 100%;
+    }
+  }
+  .schedule-table::-webkit-scrollbar {
+    display: none;
+  }
+  //О школе
+  .section-title{
+    font-size: 35px;
+  }
+  .section-title::after{
+    bottom: -30px;
+  }
+}

@@ -146,3 +146,84 @@ img {
 .schedule-table__link--brown {
   background-color: rgba(204, 150, 150, 0.4705882353);
 }
+
+.about-school {
+  background-image: url(../images/Ellipse-blue.svg), url(../images/Ellipse-pink.svg);
+  background-position: top 0 right 0, bottom 0 left 0;
+  background-repeat: no-repeat;
+}
+
+.school-content {
+  margin: 60px 0 0 0;
+}
+.school-content p {
+  font-family: "Noto Sans";
+  font-size: 18px;
+}
+.school-content p span {
+  font-weight: 600;
+}
+.school-content p a {
+  font-weight: 600;
+  color: #58C8E9;
+}
+
+.school-content__list {
+  list-style-type: none;
+}
+
+.school-content__item {
+  font-family: "Noto Sans";
+  font-size: 18px;
+}
+.school-content__item span {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .schedule-pic {
+    height: 33px;
+  }
+  .schedule-table__text, .schedule-table__link {
+    font-size: 16px;
+  }
+  .schedule-table {
+    margin: 50px auto;
+    width: 90%;
+  }
+  .schedule-table td {
+    padding: 10px 10px;
+  }
+  .schedule-table__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .schedule-table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .schedule-table tbody {
+    width: 100%;
+  }
+  .schedule-table tr {
+    min-width: 100%;
+  }
+  .schedule-table::-webkit-scrollbar {
+    display: none;
+  }
+  .section-title {
+    font-size: 35px;
+  }
+  .section-title::after {
+    bottom: -30px;
+  }
+}
