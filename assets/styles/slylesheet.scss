@@ -189,6 +189,11 @@ img {
   font-weight: 600;
   font-size: 32px;
 }
+.checklist-subtitle{
+  font-family: $font;
+  font-weight: 600;
+  font-size: 24px;
+}
 @media screen and (max-width:767px) {
   //Расписание
   .schedule-pic{
