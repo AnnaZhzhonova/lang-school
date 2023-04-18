@@ -194,6 +194,12 @@ img {
   font-weight: 600;
   font-size: 24px;
 }
+//адаптив планшет
+@media screen (min-width:766px) and (max-width:1023px){
+
+}
+
+//адаптив мобайл
 @media screen and (max-width:767px) {
   //Расписание
   .schedule-pic{
