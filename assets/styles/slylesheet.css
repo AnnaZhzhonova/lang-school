@@ -54,3 +54,40 @@ img {
   height: 7px;
   background-color: #F45B5D;
 }
+
+.payment__p {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000;
+}
+
+.payment__p_font-weight_bold {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: bold;
+}
+
+.payment__table__font-weight-light {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  font-style: italic;
+}
+
+.payment__p_font-weight_bold-and-italic {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: bold;
+  font-style: italic;
+}
