@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,11 +13,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .container {
@@ -52,26 +52,28 @@ img {
   bottom: -35px;
   width: 244px;
   height: 7px;
-  background-color: #F45B5D;
+  background-color: #f45b5d;
 }
 
-.teachers-content {
+.teachers-description {
   margin: 60px 0 0 0;
 }
-.teachers-content p {
+.teachers-description p {
   font-family: "Noto Sans";
   font-size: 18px;
 }
-.teachers-content p img {
+.teachers-description p img {
   width: 50px;
   height: 30px;
+  height: 30px;
+  z-index: 100;
 }
-.teachers-content p a {
+.teachers-description p a {
   font-weight: 600;
-  color: #58C8E9;
+  color: #58c8e9;
 }
 
-.teachers-box {
+.carouselExampleIndicators.carousel.slide {
   width: 1170;
   height: 1000px;
   display: -ms-grid;
@@ -158,13 +160,8 @@ img {
   -ms-grid-row: 5;
   -ms-grid-column: 9;
 }
-
-.div1 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 1/1/2/3;
+.teachers-box p {
+  margin: auto;
 }
 
 .teachers-box__name {
@@ -182,6 +179,7 @@ img {
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-area: 1/4/2/6;
+  text-align: end;
 }
 .teachers-box__social-net img {
   width: 20px;
