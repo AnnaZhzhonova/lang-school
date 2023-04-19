@@ -43,6 +43,10 @@ img {
   background-color: $color-pink;
 }
 //наши преподаватели
+.teachers{
+  font-family: $font;
+  font-size: 18px;
+}
 .teachers-description{
   margin: 60px 0 0 0;
   p{
@@ -59,14 +63,16 @@ img {
     }
   }
 }
-.carouselExampleIndicators.carousel.slide{
-  width: 1170;
+.teachers-box_inner{
+  width: 80vw;
   height: 1000px;
   display: grid;
   grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr) 10fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  font-family: $font;
+  font-size: 18px;
   p{
     margin left: 20px;
   }
@@ -87,4 +93,5 @@ img {
 }
 .teachers-box__info { grid-area: 3 / 1 / 4 / 6; }
 .teachers-box__language { grid-area: 2 / 1 / 3 / 6; }
+
 

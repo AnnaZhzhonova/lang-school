@@ -73,9 +73,9 @@ img {
   color: #58c8e9;
 }
 
-.carouselExampleIndicators.carousel.slide {
-  width: 1170;
-  height: 1000px;
+.teachers-box_inner {
+  width: 80vw;
+  height: 500px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 0px 1fr 0px 2fr 0px 1fr 0px 1fr;
@@ -179,11 +179,11 @@ img {
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-area: 1/4/2/6;
-  text-align: end;
+  text-align: center;
 }
 .teachers-box__social-net img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .teachers-box__info {
