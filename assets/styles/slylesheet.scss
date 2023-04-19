@@ -48,22 +48,61 @@ img {
 // Оплата
 
 .payment__p {
-  @include font-p;
+  @include payment__font-p;
   color: $black;
 }
 
 .payment__p_font-weight_bold {
-  @include font-p;
+  @include payment__font-p;
   font-weight: bold;
 }
 
 .payment__table__font-weight-light {
-  @include font-p;
+  @include payment__font-p;
   font-style: italic;
+
+  border: 1px solid #000000;
+
 }
 
 .payment__p_font-weight_bold-and-italic {
-  @include font-p;
+  @include payment__font-p;
   font-weight: bold;
   font-style: italic;
+
+  padding-top: 10px;
+}
+
+.payment__table {
+  @include payment__font-p;
+  font-weight: bold;
+
+  width: 70%;
+
+
+  // border: 1px solid #000000;
+
+  // border-spacing: 40px;
+
+  margin-bottom: 10px;
+
+  // border-collapse: separate;
+  // border-spacing: 10px 20px;
+}
+
+.payment__th {
+  border: 1px solid #000000;
+  height: 60px;
+}
+
+
+.payment__td {
+  border: 1px solid #000000;
+  height: 60px;
+}
+
+.payment__p-under-the-table {
+  @include payment__font-p;
+
+  padding-top: 10px;
 }

@@ -80,6 +80,7 @@ img {
   font-size: 24px;
   line-height: 31px;
   font-style: italic;
+  border: 1px solid #000000;
 }
 
 .payment__p_font-weight_bold-and-italic {
@@ -90,4 +91,35 @@ img {
   line-height: 31px;
   font-weight: bold;
   font-style: italic;
+  padding-top: 10px;
+}
+
+.payment__table {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: bold;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.payment__th {
+  border: 1px solid #000000;
+  height: 60px;
+}
+
+.payment__td {
+  border: 1px solid #000000;
+  height: 60px;
+}
+
+.payment__p-under-the-table {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  padding-top: 10px;
 }

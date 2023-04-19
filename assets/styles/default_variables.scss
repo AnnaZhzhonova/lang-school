@@ -31,7 +31,7 @@ $font: 'Noto Sans';
     text-transform: uppercase;
 }
 
-@mixin font-p {
+@mixin payment__font-p {
     font-family: $font;
     font-style: normal;
     font-weight: 400;
