@@ -55,7 +55,6 @@ img {
   background-color: #F45B5D;
 }
 
-
 .schedule {
   position: relative;
   height: 1900px;
@@ -336,7 +335,7 @@ img {
   .section-title::after {
     bottom: -30px;
   }
-
+}
 .payment__p {
   font-family: "Noto Sans";
   font-style: normal;
@@ -444,5 +443,4 @@ img {
   font-weight: 400;
   font-size: 24px;
   line-height: 31px;
-
 }
