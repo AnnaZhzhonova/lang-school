@@ -106,12 +106,12 @@ img {
 }
 
 .payment__th {
-  border: 1px solid #000000;
+  border: 1px solid #000;
   height: 60px;
 }
 
 .payment__td {
-  border: 1px solid #000000;
+  border: 1px solid #000;
   height: 60px;
 }
 
@@ -122,4 +122,20 @@ img {
   font-size: 24px;
   line-height: 31px;
   padding-top: 10px;
+}
+
+.privacy_policy__li {
+  padding-bottom: 10px;
+}
+
+.privacy_policy__a {
+  font-weight: bold;
+  color: #000;
+}
+.privacy_policy__a:hover {
+  color: #536268;
+}
+
+.privacy_policy__h3 {
+  padding-bottom: 10px;
 }
