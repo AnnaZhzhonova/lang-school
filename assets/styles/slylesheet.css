@@ -55,6 +55,7 @@ img {
   background-color: #F45B5D;
 }
 
+
 .schedule {
   position: relative;
   height: 1900px;
@@ -335,4 +336,113 @@ img {
   .section-title::after {
     bottom: -30px;
   }
+
+.payment__p {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000;
+}
+
+.payment__p_font-weight_bold {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: bold;
+}
+
+.payment__table__font-weight-light {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  font-style: italic;
+  border: 1px solid #000000;
+}
+
+.payment__p_font-weight_bold-and-italic {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.payment__table {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: bold;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.payment__th {
+  border: 1px solid #000;
+  height: 60px;
+}
+
+.payment__td {
+  border: 1px solid #000;
+  height: 60px;
+}
+
+.payment__p-under-the-table {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  padding-top: 10px;
+}
+
+.privacy_policy__li {
+  padding-bottom: 10px;
+}
+
+.privacy_policy__a {
+  font-weight: bold;
+  color: #000;
+}
+.privacy_policy__a:hover {
+  color: #536268;
+}
+
+.privacy_policy__h3 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.public_offer-under-the-table {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.public_offer_font-weight_bold {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: bold;
+}
+
+.last-element-in-p {
+  border-bottom: 2px solid #536268;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+
 }
