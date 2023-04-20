@@ -123,4 +123,23 @@ img {
 
 .privacy_policy__h3 {
   padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.public_offer-under-the-table {
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.public_offer_font-weight_bold {
+  @include payment__font-p;
+  font-weight: bold;
+}
+
+.last-element-in-p {
+  border-bottom: 2px solid $color-gray;
+
+  @include payment__font-p;
+
 }
