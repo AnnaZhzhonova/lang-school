@@ -43,6 +43,261 @@ img {
   width: 244px;
   height: 7px;
   background-color: $color-pink;
+
+
+}
+//Расписание занятий
+.schedule{
+  position: relative;
+  height: 1900px;
+  background-image: url(../images/Ellipse-blue.svg),
+  url(../images/Ellipse-pink.svg);
+  background-position: top 0 right 0, bottom 0 left 0;
+  background-repeat: no-repeat;
+}
+.schedule-box{
+  margin-top: 90px;
+  padding: 30px 0 0 0;
+  z-index: 1;
+  border: 2px solid $color-gray-light;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.schedule-pic{
+  height: 53px;
+}
+.schedule-pic--border{
+  border: 1px solid $color-gray-light;
+}
+.schedule-list{
+  justify-content: flex-end;
+}
+.table{
+  margin: 50px auto;
+  width: 90%;
+  border: 1px solid $color-gray-light;
+
+  td{
+    padding: 15px 10px;
+    border: 1px solid $color-gray-light;
+  }
+}
+
+.table__text,.table__link{
+  padding: 0;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 20px;
+}
+.table__text--title{
+  font-weight: 600;
+  text-align: center;
+}
+.table__text--bold{
+  font-weight: 700;
+}
+.table__link{
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 20px;
+  color: $black;
+}
+.table__link--gray{
+  background: $color-gray-light;
+}
+.table__link--pink{
+  background-color: $color-pink-light;
+}
+.table__link--blue{
+  background-color: $color-blue-light;
+}
+.table__link--green{
+  background-color: $color-green-light;
+}
+.table__link--purple{
+  background-color: $color-purple-light;
+}
+.table__link--yellow{
+  background-color: $color-yellow-light;
+}
+.table__link--brown{
+  background-color: $color-brown-light;
+}
+//О школе
+.about-school{
+  background-image: url(../images/Ellipse-blue.svg),
+  url(../images/Ellipse-pink.svg);
+  background-position: top 0 right 0, bottom 0 left 0;
+  background-repeat: no-repeat;
+}
+.school-content{
+  margin: 60px 0 0 0;}
+
+  .text{
+    font-family: $font;
+    font-size: 18px;
+    span{
+      font-weight: 600;
+    }
+  }
+.text__link{
+  font-weight: 600;
+  color: $color-blue;
+}
+.school-content__list{
+  list-style-type: none;
+}
+.school-content__item{
+  font-family: $font;
+  font-size: 18px;
+  span{
+    font-weight: 600;
+  }
+}
+.school-content__icon{
+  width: 15px;
+  margin: 0 5px 5px 0;
+}
+//чеклист
+.checklist-content{
+  margin: 60px 0 30px 0;
+}
+.table__item{
+  padding: 0 0 0 10px;
+}
+.table__text{
+  span{
+    font-weight: 600;
+  }
+}
+.checklist__link{
+  font-family: $font;
+  font-size: 18px;
+  color: $color-gray;
+  font-weight: 600;
+}
+.checklist-desc{
+  margin: 60px 0 30px 0;
+}
+.checklist-content,.checklist-info{
+  margin: 30px 0 30px 0;
+}
+.checklist__list{
+  list-style-type: none;
+}
+.section-subtitle{
+  font-family: $font;
+  font-weight: 600;
+  font-size: 32px;
+}
+.checklist-subtitle{
+  position: relative;
+  margin: 0 0 10px 40px;
+  font-family: $font;
+  font-weight: 600;
+  font-size: 24px;
+}
+.checklist-subtitle--english::before{
+  content:'';
+  background-image: url(../images/GB_flag.svg);
+  background-size:contain;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: -40px;
+  width: 37px;
+  height: 18px;
+}
+.checklist-subtitle--deutsch::before{
+  content:'';
+  background-image: url(../images/Germany_flag.svg);
+  background-size:contain;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: -40px;
+  width: 35px;
+  height: 18px;
+}
+.section-subtitle--test, .section-subtitle--info{
+  position: relative;
+  margin: 0 0 0 60px;
+}
+.section-subtitle--test::before{
+  content:'';
+  background-image: url(../images/tests.svg);
+  background-size:contain;
+  display: inline-block;
+  position: absolute;
+  left: -60px;
+  top: -10px;
+  width: 50px;
+  height: 55px;
+}
+.section-subtitle--info::before{
+  content:'';
+  background-image: url(../images/laptop.svg);
+  background-size:contain;
+  display: inline-block;
+  position: absolute;
+  left: -60px;
+  top: -10px;
+  width: 50px;
+  height: 50px;
+}
+//адаптив планшет
+@media (min-width:766px) and (max-width:1023px){
+
+}
+
+//адаптив мобайл
+@media screen and (max-width:767px) {
+  //Расписание
+  .schedule-pic{
+    height: 33px;
+  }
+  .table__text, .table__link{
+    font-size:16px;
+  }
+  .table{
+    margin: 50px auto;
+    width: 90%;
+    td{
+      padding: 10px 10px;
+    }
+  }
+  .table__box{
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .table{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    tbody{
+      width: 100%;
+    }
+    tr{
+      min-width: 100%;
+    }
+  }
+  .table::-webkit-scrollbar {
+    display: none;
+  }
+  //О школе
+  .section-title{
+    font-size: 35px;
+  }
+  .section-title::after{
+    bottom: -30px;
+  }
+
 }
 
 // Оплата
@@ -141,5 +396,6 @@ img {
   border-bottom: 2px solid $color-gray;
 
   @include payment__font-p;
+
 
 }
