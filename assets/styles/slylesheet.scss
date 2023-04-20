@@ -191,9 +191,59 @@ img {
   font-size: 32px;
 }
 .checklist-subtitle{
+  position: relative;
+  margin: 0 0 10px 40px;
   font-family: $font;
   font-weight: 600;
   font-size: 24px;
+}
+.checklist-subtitle--english::before{
+  content:'';
+  background-image: url(../images/GB_flag.svg);
+  background-size:contain;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: -40px;
+  width: 37px;
+  height: 18px;
+}
+.checklist-subtitle--deutsch::before{
+  content:'';
+  background-image: url(../images/Germany_flag.svg);
+  background-size:contain;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: -40px;
+  width: 35px;
+  height: 18px;
+}
+.section-subtitle--test, .section-subtitle--info{
+  position: relative;
+  margin: 0 0 0 60px;
+}
+.section-subtitle--test::before{
+  content:'';
+  background-image: url(../images/tests.svg);
+  background-size:contain;
+  display: inline-block;
+  position: absolute;
+  left: -60px;
+  top: -10px;
+  width: 50px;
+  height: 55px;
+}
+.section-subtitle--info::before{
+  content:'';
+  background-image: url(../images/laptop.svg);
+  background-size:contain;
+  display: inline-block;
+  position: absolute;
+  left: -60px;
+  top: -10px;
+  width: 50px;
+  height: 50px;
 }
 //адаптив планшет
 @media (min-width:766px) and (max-width:1023px){
