@@ -8,8 +8,8 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,4 +41,140 @@ img {
   width: 244px;
   height: 7px;
   background-color: $color-pink;
+}
+
+//header
+.header__conteiner {
+display: flex;
+flex-direction: row;
+height: 115px;
+max-width: 1140px;
+margin: 0 auto;
+padding: 20px;
+justify-content: space-between;
+align-items: center;
+.logo__icon {
+  width: 130px;
+  height: 130px;
+ }
+ .telegram__icon {
+  width: 30px;
+  height: 30px;
+ }
+ .header__ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+   .header__li {
+    @include font-24;
+    padding: 15px;
+    }
+    .header__a:hover {
+    color: red;
+    }
+    .header__a {
+    text-decoration: none;
+    color: black;
+    }
+  }
+}
+.main__conteiner {
+  max-width: 1140px;
+  max-height: calc(100vh - 230px);
+  margin: 0 auto;
+  padding: 0;
+  overflow-y: auto;
+  position: relative;
+  border-bottom: 2px solid rgb(221, 217, 217);
+  .main__img {
+    max-width: 100%;
+  }
+  .ellipse28 {
+    position: absolute;
+    top: 200px;
+    z-index: -1;
+  }
+  .ellipse29 {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    z-index: -1;
+  }
+  .main__conteinerflex {
+    display: flex;
+    max-width: 1140px;
+    max-height: 537px;
+    margin: 0 auto;
+
+   .main__menu {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    align-items: center;
+    justify-content: center;
+    }
+    .main__a {
+    @include font-h2;
+    text-decoration: none;
+    color: black;
+    }
+    .main__a_redline {
+    text-decoration: none;
+    @include font-h2;
+    color: black;
+    border-bottom: 4px solid red;
+    }
+    .main__a:hover {
+      color: red;
+      }
+    .main__a_redline:hover {
+      color: red;
+      border-bottom: 2px solid red;
+      }
+
+   .main__h1text {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    padding: 20px;
+  }}}
+.main__h1{
+  @include font-h1;
+  white-space: nowrap;
+}
+.main__text {
+  @include font-24;
+  color: #536268;
+}
+.main__a {
+  @include font-h2; 
+  color: black;
+  }
+
+
+.footer__conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: 115px;
+  padding: 20px;
+  align-items: center;
+  margin-top: auto;
+  .footer__ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    .footer__li {
+      @include font-24;
+      padding: 15px;
+    }
+    .footer__a:hover {
+       color: red;
+    }
+    .footer__a {
+      text-decoration: none;
+      color: black;
+    }
+    }
 }

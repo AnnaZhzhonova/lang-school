@@ -28,3 +28,13 @@ $font: 'Noto Sans';
     line-height: 46px;
     text-transform: uppercase;
 }
+@mixin font-24 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;}
+@mixin font-18 {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;}
