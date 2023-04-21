@@ -453,7 +453,7 @@ img {
 }
 
 .last-element-in-p {
-  border-bottom: 2px solid $color-gray;
+  border-bottom: 2px solid $color-gray-light;
 
   @include payment__font-p;
 }
