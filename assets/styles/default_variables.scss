@@ -1,31 +1,39 @@
 //Переменные
+
 $color-blue:#58C8E9;
 $color-blue-light:rgba(88, 200, 233, 0.25);
 $color-pink:#F45B5D;
 $color-pink-light:rgba(244, 91, 93, 0.2);
 $color-gray:#536268;
 $color-gray-light:#DEDCDD;
+$color-green-light:#d9f7d9ec;
+$color-purple-light:#f6d9f8ec;
+$color-yellow-light:#f7f8d9ec;
+$color-brown-light:#cc969678;
 $black:#000;
+
 $font: 'Noto Sans';
 
 //Миксины
 @mixin reset {
     margin: 0;
     padding: 0;
-    }
-@mixin font-h1{
+}
+
+@mixin font-h1 {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
     line-height: 103px;
 }
-@mixin font-h2{
+
+@mixin font-h2 {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 46px;
+    font-size: 64px;
+    line-height: 82px;
     text-transform: uppercase;
 }
 @mixin font-24 {
@@ -38,3 +46,11 @@ $font: 'Noto Sans';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;}
+
+@mixin payment__font-p {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+}
