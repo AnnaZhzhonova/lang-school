@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -14,11 +14,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .container {
@@ -53,7 +53,7 @@ img {
   bottom: -35px;
   width: 244px;
   height: 7px;
-  background-color: #F45B5D;
+  background-color: #f45b5d;
 }
 
 .header__conteiner {
@@ -62,18 +62,18 @@ img {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   height: 115px;
   max-width: 1140px;
   margin: 0 auto;
   padding: 20px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .header__conteiner .logo__icon {
   width: 130px;
@@ -89,8 +89,8 @@ img {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   list-style-type: none;
 }
 .header__conteiner .header__ul .header__li {
@@ -145,15 +145,15 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 570px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .main__conteiner .main__conteinerflex .main__a {
   font-family: "Noto Sans";
@@ -189,8 +189,8 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 570px;
   padding: 20px;
 }
@@ -228,17 +228,17 @@ img {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   width: 100%;
   height: 115px;
   padding: 20px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: auto;
 }
 .footer__conteiner .footer__ul {
@@ -247,8 +247,8 @@ img {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   list-style-type: none;
 }
 .footer__conteiner .footer__ul .footer__li {
@@ -269,7 +269,8 @@ img {
 .schedule {
   position: relative;
   height: 1900px;
-  background-image: url(../images/Ellipse-blue.svg), url(../images/Ellipse-pink.svg);
+  background-image: url(../images/Ellipse-blue.svg),
+    url(../images/Ellipse-pink.svg);
   background-position: top 0 right 0, bottom 0 left 0;
   background-repeat: no-repeat;
 }
@@ -278,9 +279,9 @@ img {
   margin-top: 90px;
   padding: 30px 0 0 0;
   z-index: 1;
-  border: 2px solid #DEDCDD;
+  border: 2px solid #dedcdd;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #fff;
 }
 
@@ -289,26 +290,27 @@ img {
 }
 
 .schedule-pic--border {
-  border: 1px solid #DEDCDD;
+  border: 1px solid #dedcdd;
 }
 
 .schedule-list {
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .table {
   margin: 50px auto;
   width: 90%;
-  border: 1px solid #DEDCDD;
+  border: 1px solid #dedcdd;
 }
 .table td {
   padding: 15px 10px;
-  border: 1px solid #DEDCDD;
+  border: 1px solid #dedcdd;
 }
 
-.table__text, .table__link {
+.table__text,
+.table__link {
   padding: 0;
   font-family: "Noto Sans";
   font-weight: 400;
@@ -335,7 +337,7 @@ img {
 }
 
 .table__link--gray {
-  background: #DEDCDD;
+  background: #dedcdd;
 }
 
 .table__link--pink {
@@ -363,7 +365,8 @@ img {
 }
 
 .about-school {
-  background-image: url(../images/Ellipse-blue.svg), url(../images/Ellipse-pink.svg);
+  background-image: url(../images/Ellipse-blue.svg),
+    url(../images/Ellipse-pink.svg);
   background-position: top 0 right 0, bottom 0 left 0;
   background-repeat: no-repeat;
 }
@@ -382,7 +385,7 @@ img {
 
 .text__link {
   font-weight: 600;
-  color: #58C8E9;
+  color: #58c8e9;
 }
 
 .school-content__list {
@@ -425,7 +428,8 @@ img {
   margin: 60px 0 30px 0;
 }
 
-.checklist-content, .checklist-info {
+.checklist-content,
+.checklist-info {
   margin: 30px 0 30px 0;
 }
 
@@ -471,7 +475,8 @@ img {
   height: 18px;
 }
 
-.section-subtitle--test, .section-subtitle--info {
+.section-subtitle--test,
+.section-subtitle--info {
   position: relative;
   margin: 0 0 0 60px;
 }
@@ -504,7 +509,8 @@ img {
   .schedule-pic {
     height: 33px;
   }
-  .table__text, .table__link {
+  .table__text,
+  .table__link {
     font-size: 16px;
   }
   .table {
@@ -526,7 +532,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     overflow-x: scroll;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -547,11 +553,18 @@ img {
     bottom: -30px;
   }
 }
+.payment {
+  background-image: url(../images/Ellipse-blue.svg),
+    url(../images/Ellipse-pink.svg);
+  background-position: top 0 right 0, bottom 0 left 0;
+  background-repeat: no-repeat;
+}
+
 .payment__p {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 31px;
   color: #000;
 }
@@ -560,7 +573,7 @@ img {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 31px;
   font-weight: bold;
 }
@@ -569,17 +582,18 @@ img {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 31px;
-  font-style: italic;
-  border: 1px solid #000000;
+  font-weight: bold;
+  border: 1px solid #dedcdd;
+  padding: 10px;
 }
 
 .payment__p_font-weight_bold-and-italic {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 31px;
   font-weight: bold;
   font-style: italic;
@@ -590,30 +604,31 @@ img {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 31px;
-  font-weight: bold;
   width: 70%;
   margin-bottom: 10px;
 }
 
 .payment__th {
-  border: 1px solid #000;
+  border: 1px solid #dedcdd;
   height: 60px;
+  padding: 10px;
 }
 
 .payment__td {
-  border: 1px solid #000;
+  border: 1px solid #dedcdd;
   height: 60px;
+  padding: 10px;
 }
 
 .payment__p-under-the-table {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 31px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .privacy_policy__li {
@@ -622,10 +637,9 @@ img {
 
 .privacy_policy__a {
   font-weight: bold;
-  color: #000;
-}
-.privacy_policy__a:hover {
-  color: #536268;
+  color: #58c8e9;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .privacy_policy__h3 {
@@ -642,16 +656,16 @@ img {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 31px;
   font-weight: bold;
 }
 
 .last-element-in-p {
-  border-bottom: 2px solid #536268;
+  border-bottom: 2px solid #dedcdd;
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 31px;
 }

@@ -1,16 +1,16 @@
 //Переменные
 
-$color-blue:#58C8E9;
-$color-blue-light:rgba(88, 200, 233, 0.25);
-$color-pink:#F45B5D;
-$color-pink-light:rgba(244, 91, 93, 0.2);
-$color-gray:#536268;
-$color-gray-light:#DEDCDD;
-$color-green-light:#d9f7d9ec;
-$color-purple-light:#f6d9f8ec;
-$color-yellow-light:#f7f8d9ec;
-$color-brown-light:#cc969678;
-$black:#000;
+$color-blue: #58C8E9;
+$color-blue-light: rgba(88, 200, 233, 0.25);
+$color-pink: #F45B5D;
+$color-pink-light: rgba(244, 91, 93, 0.2);
+$color-gray: #536268;
+$color-gray-light: #DEDCDD;
+$color-green-light: #d9f7d9ec;
+$color-purple-light: #f6d9f8ec;
+$color-yellow-light: #f7f8d9ec;
+$color-brown-light: #cc969678;
+$black: #000;
 
 $font: 'Noto Sans';
 
@@ -51,6 +51,6 @@ $font: 'Noto Sans';
     font-family: $font;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 31px;
 }
