@@ -56,7 +56,6 @@ img {
   background-color: #F45B5D;
 }
 
-<<<<<<< HEAD
 .header__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,8 +159,8 @@ img {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 46px;
+  font-size: 64px;
+  line-height: 82px;
   text-transform: uppercase;
   text-decoration: none;
   color: black;
@@ -171,8 +170,8 @@ img {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 46px;
+  font-size: 64px;
+  line-height: 82px;
   text-transform: uppercase;
   color: black;
   border-bottom: 4px solid red;
@@ -217,8 +216,8 @@ img {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 46px;
+  font-size: 64px;
+  line-height: 82px;
   text-transform: uppercase;
   color: black;
 }
@@ -253,7 +252,19 @@ img {
   list-style-type: none;
 }
 .footer__conteiner .footer__ul .footer__li {
-=======
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 15px;
+}
+.footer__conteiner .footer__ul .footer__a:hover {
+  color: red;
+}
+.footer__conteiner .footer__ul .footer__a {
+  text-decoration: none;
+  color: black;
+}
 
 .schedule {
   position: relative;
@@ -535,23 +546,12 @@ img {
   .section-title::after {
     bottom: -30px;
   }
-
+}
 .payment__p {
->>>>>>> 042ba25ab918106e3c4e5bc783cf99e14d8bf840
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-<<<<<<< HEAD
-  padding: 15px;
-}
-.footer__conteiner .footer__ul .footer__a:hover {
-  color: red;
-}
-.footer__conteiner .footer__ul .footer__a {
-  text-decoration: none;
-  color: black;
-=======
   line-height: 31px;
   color: #000;
 }
@@ -654,6 +654,4 @@ img {
   font-weight: 400;
   font-size: 24px;
   line-height: 31px;
-
->>>>>>> 042ba25ab918106e3c4e5bc783cf99e14d8bf840
 }
