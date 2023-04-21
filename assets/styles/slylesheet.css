@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  /*   min-height: 100vh; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,8 +74,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* .logo__icon {
+    width: 130px;
+    height: 130px;
+   } */
 }
-.header__conteiner .logo__icon {
+.header__conteiner .a__telegram {
+  display: inline-block;
   width: 130px;
   height: 130px;
 }
@@ -110,32 +115,32 @@ img {
 
 .main__conteiner {
   max-width: 1140px;
-  max-height: calc(100vh - 230px);
+  height: 100%;
   margin: 0 auto;
   padding: 0;
   overflow-y: auto;
   position: relative;
   border-bottom: 2px solid rgb(221, 217, 217);
+  /*   .ellipse28 {
+      position: absolute;
+      top: 200px;
+      z-index: -1;
+    }
+    .ellipse29 {
+      position: absolute;
+      top: 200px;
+      left: 300px;
+      z-index: -1;
+    } */
 }
 .main__conteiner .main__img {
   max-width: 100%;
-}
-.main__conteiner .ellipse28 {
-  position: absolute;
-  top: 200px;
-  z-index: -1;
-}
-.main__conteiner .ellipse29 {
-  position: absolute;
-  top: 200px;
-  left: 300px;
-  z-index: -1;
 }
 .main__conteiner .main__conteinerflex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1140px;
+  width: 100%;
   max-height: 537px;
   margin: 0 auto;
 }
@@ -191,8 +196,11 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 570px;
-  padding: 20px;
+  width: 612px;
+  padding: 20px 0 20px 20px;
+  background-image: url(../images/Ellipse-28.svg), url(../images/Ellipse-29.svg);
+  background-position: top -20px left 0, top -20px right 0;
+  background-repeat: no-repeat;
 }
 
 .main__h1 {

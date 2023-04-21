@@ -9,7 +9,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  min-height: 100vh;
+  // Изза высоты появляется расстояние между header main footer
+/*   min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -55,10 +56,16 @@ margin: 0 auto;
 padding: 20px;
 justify-content: space-between;
 align-items: center;
-.logo__icon {
+//лого сжимается красиво, если задать родительскому элементу размеры, а картинка остается 100%
+.a__telegram{
+  display: inline-block;
   width: 130px;
   height: 130px;
- }
+}
+/* .logo__icon {
+  width: 130px;
+  height: 130px;
+ } */
  .telegram__icon {
   width: 30px;
   height: 30px;
@@ -82,7 +89,8 @@ align-items: center;
 }
 .main__conteiner {
   max-width: 1140px;
-  max-height: calc(100vh - 230px);
+  //высота просто 100% убирает прокрутку в секции main
+  height: 100%;
   margin: 0 auto;
   padding: 0;
   overflow-y: auto;
@@ -91,7 +99,7 @@ align-items: center;
   .main__img {
     max-width: 100%;
   }
-  .ellipse28 {
+/*   .ellipse28 {
     position: absolute;
     top: 200px;
     z-index: -1;
@@ -101,10 +109,11 @@ align-items: center;
     top: 200px;
     left: 300px;
     z-index: -1;
-  }
+  } */
   .main__conteinerflex {
     display: flex;
-    max-width: 1140px;
+    //фиксированная ширина давала скролл на небольшик экранах
+    width: 100%;
     max-height: 537px;
     margin: 0 auto;
 
@@ -137,9 +146,16 @@ align-items: center;
    .main__h1text {
     display: flex;
     flex-direction: column;
-    width: 570px;
-    padding: 20px;
+    width: 612px;
+    //паддинг не мешает, но если для правой стороны поставить 0,
+    //то на точке близкой к брейкпоинту (1023px) не будет горизонтального скролла
+    padding: 20px 0 20px 20px;
+    background-image: url(../images/Ellipse-28.svg),
+    url(../images/Ellipse-29.svg);
+    background-position: top -20px left 0, top -20px right 0;
+    background-repeat: no-repeat;
   }}}
+
 .main__h1{
   @include font-h1;
   white-space: nowrap;
@@ -149,7 +165,7 @@ align-items: center;
   color: #536268;
 }
 .main__a {
-  @include font-h2; 
+  @include font-h2;
   color: black;
   }
 
