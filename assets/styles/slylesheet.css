@@ -67,14 +67,30 @@ img {
   font-family: "Noto Sans";
   font-size: 18px;
 }
-.teachers-description p img {
-  width: 50px;
-  height: 30px;
-  z-index: 100;
+.teachers-description p span {
+  font-weight: 600;
 }
 .teachers-description p a {
   font-weight: 600;
   color: #58C8E9;
+}
+.teachers-description .teachers-country {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: column;
+      -ms-flex-pack: column;
+          justify-content: column;
+}
+.teachers-description .teachers-country img {
+  width: 50px;
+  height: 30px;
+  z-index: 100;
+  margin-right: 10px;
+}
+.teachers-description .teachers-country h5 {
+  font-weight: 600;
 }
 
 .teachers-box_inner {
@@ -87,10 +103,10 @@ img {
   padding: 5% 15%;
   -ms-grid-columns: 1fr 0px 1fr 0px 2fr 0px 1fr 0px 1fr;
   grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
-  -ms-grid-rows: 2fr 0px 2fr 0px 10fr;
+  -ms-grid-rows: 2fr 10px 2fr 10px 10fr;
   grid-template-rows: repeat(2, 2fr) 10fr;
   grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-row-gap: 10px;
   font-family: "Noto Sans";
   font-size: 18px;
 }
@@ -169,17 +185,14 @@ img {
   -ms-grid-row: 5;
   -ms-grid-column: 9;
 }
-.teachers-box_inner p {
-  margin-left: 20px;
-}
 
 .teachers-box__name {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 1/3/2/4;
-  text-align: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 1/1/2/4;
+  text-align: start;
 }
 
 .teachers-box__social-net {
