@@ -1,15 +1,15 @@
 @import "default_variables";
 
 //общие параметры стилей
-*{
+* {
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
-
 body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -28,12 +28,14 @@ img {
   text-decoration: none;
   cursor: pointer;
 }
-.section-title{
+
+.section-title {
   @include font-h2;
   position: relative;
   margin: 46px 0 35px 0;
 }
-.section-title::after{
+
+.section-title::after {
   content: "";
   position: absolute;
   left: 0;
@@ -41,6 +43,143 @@ img {
   width: 244px;
   height: 7px;
   background-color: $color-pink;
+}
+
+//header
+.header__conteiner {
+display: flex;
+flex-direction: row;
+height: 115px;
+max-width: 1140px;
+margin: 0 auto;
+padding: 20px;
+justify-content: space-between;
+align-items: center;
+.logo__icon {
+  width: 130px;
+  height: 130px;
+ }
+ .telegram__icon {
+  width: 30px;
+  height: 30px;
+ }
+ .header__ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+   .header__li {
+    @include font-24;
+    padding: 15px;
+    }
+    .header__a:hover {
+    color: red;
+    }
+    .header__a {
+    text-decoration: none;
+    color: black;
+    }
+  }
+}
+.main__conteiner {
+  max-width: 1140px;
+  max-height: calc(100vh - 230px);
+  margin: 0 auto;
+  padding: 0;
+  overflow-y: auto;
+  position: relative;
+  border-bottom: 2px solid rgb(221, 217, 217);
+  .main__img {
+    max-width: 100%;
+  }
+  .ellipse28 {
+    position: absolute;
+    top: 200px;
+    z-index: -1;
+  }
+  .ellipse29 {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    z-index: -1;
+  }
+  .main__conteinerflex {
+    display: flex;
+    max-width: 1140px;
+    max-height: 537px;
+    margin: 0 auto;
+
+   .main__menu {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    align-items: center;
+    justify-content: center;
+    }
+    .main__a {
+    @include font-h2;
+    text-decoration: none;
+    color: black;
+    }
+    .main__a_redline {
+    text-decoration: none;
+    @include font-h2;
+    color: black;
+    border-bottom: 4px solid red;
+    }
+    .main__a:hover {
+      color: red;
+      }
+    .main__a_redline:hover {
+      color: red;
+      border-bottom: 2px solid red;
+      }
+
+   .main__h1text {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    padding: 20px;
+  }}}
+.main__h1{
+  @include font-h1;
+  white-space: nowrap;
+}
+.main__text {
+  @include font-24;
+  color: #536268;
+}
+.main__a {
+  @include font-h2; 
+  color: black;
+  }
+
+
+.footer__conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: 115px;
+  padding: 20px;
+  align-items: center;
+  margin-top: auto;
+  .footer__ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    .footer__li {
+      @include font-24;
+      padding: 15px;
+    }
+    .footer__a:hover {
+       color: red;
+    }
+    .footer__a {
+      text-decoration: none;
+      color: black;
+    }
+    }
+
 
 }
 //Расписание занятий
@@ -294,4 +433,105 @@ img {
   .section-title::after{
     bottom: -30px;
   }
+
+}
+
+// Оплата
+
+.payment__p {
+  @include payment__font-p;
+  color: $black;
+}
+
+.payment__p_font-weight_bold {
+  @include payment__font-p;
+  font-weight: bold;
+}
+
+.payment__table__font-weight-light {
+  @include payment__font-p;
+  font-style: italic;
+
+  border: 1px solid #000000;
+
+}
+
+.payment__p_font-weight_bold-and-italic {
+  @include payment__font-p;
+  font-weight: bold;
+  font-style: italic;
+
+  padding-top: 10px;
+}
+
+.payment__table {
+  @include payment__font-p;
+  font-weight: bold;
+
+  width: 70%;
+
+
+  // border: 1px solid #000000;
+
+  // border-spacing: 40px;
+
+  margin-bottom: 10px;
+
+  // border-collapse: separate;
+  // border-spacing: 10px 20px;
+}
+
+.payment__th {
+  border: 1px solid $black;
+  height: 60px;
+}
+
+
+.payment__td {
+  border: 1px solid $black;
+  height: 60px;
+}
+
+.payment__p-under-the-table {
+  @include payment__font-p;
+
+  padding-top: 10px;
+}
+
+.privacy_policy__li {
+  padding-bottom: 10px;
+}
+
+.privacy_policy__a {
+  font-weight: bold;
+
+  color: $black;
+
+  &:hover {
+    color: $color-gray;
+  }
+}
+
+.privacy_policy__h3 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.public_offer-under-the-table {
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.public_offer_font-weight_bold {
+  @include payment__font-p;
+  font-weight: bold;
+}
+
+.last-element-in-p {
+  border-bottom: 2px solid $color-gray;
+
+  @include payment__font-p;
+
+
 }
