@@ -97,7 +97,8 @@ img {
   border: 1px solid #DEDCDD;
 }
 
-.table__text, .table__link {
+.table__text,
+.table__link {
   padding: 0;
   font-family: "Noto Sans";
   font-weight: 400;
@@ -214,7 +215,8 @@ img {
   margin: 60px 0 30px 0;
 }
 
-.checklist-content, .checklist-info {
+.checklist-content,
+.checklist-info {
   margin: 30px 0 30px 0;
 }
 
@@ -260,7 +262,8 @@ img {
   height: 18px;
 }
 
-.section-subtitle--test, .section-subtitle--info {
+.section-subtitle--test,
+.section-subtitle--info {
   position: relative;
   margin: 0 0 0 60px;
 }
@@ -293,7 +296,8 @@ img {
   .schedule-pic {
     height: 33px;
   }
-  .table__text, .table__link {
+  .table__text,
+.table__link {
     font-size: 16px;
   }
   .table {
@@ -336,6 +340,12 @@ img {
     bottom: -30px;
   }
 }
+.payment {
+  background-image: url(../images/Ellipse-blue.svg), url(../images/Ellipse-pink.svg);
+  background-position: top 0 right 0, bottom 0 left 0;
+  background-repeat: no-repeat;
+}
+
 .payment__p {
   font-family: "Noto Sans";
   font-style: normal;
@@ -360,8 +370,9 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 31px;
-  font-style: italic;
-  border: 1px solid #000000;
+  font-weight: bold;
+  border: 1px solid #DEDCDD;
+  padding: 10px;
 }
 
 .payment__p_font-weight_bold-and-italic {
@@ -381,19 +392,20 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 31px;
-  font-weight: bold;
   width: 70%;
   margin-bottom: 10px;
 }
 
 .payment__th {
-  border: 1px solid #000;
+  border: 1px solid #DEDCDD;
   height: 60px;
+  padding: 10px;
 }
 
 .payment__td {
-  border: 1px solid #000;
+  border: 1px solid #DEDCDD;
   height: 60px;
+  padding: 10px;
 }
 
 .payment__p-under-the-table {
@@ -402,7 +414,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 31px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .privacy_policy__li {
