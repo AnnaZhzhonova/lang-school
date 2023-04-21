@@ -423,10 +423,9 @@ img {
 
 .privacy_policy__a {
   font-weight: bold;
-  color: #000;
-}
-.privacy_policy__a:hover {
-  color: #536268;
+  color: #58C8E9;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .privacy_policy__h3 {

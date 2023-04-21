@@ -429,11 +429,16 @@ img {
 .privacy_policy__a {
   font-weight: bold;
 
-  color: $black;
+  color: $color-blue;
 
-  &:hover {
-    color: $color-gray;
-  }
+
+  text-decoration: none;
+  cursor: pointer;
+
+
+  // &:hover {
+  //   color: $color-gray;
+  // }
 }
 
 .privacy_policy__h3 {
