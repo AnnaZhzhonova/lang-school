@@ -78,7 +78,8 @@ img {
 .teachers-box_inner{
   margin:auto;
   width: 80vw;
-  height: 500px;
+  min-height: 100vh;
+  max-height: fit-content;
   display: grid;
   border: 2px solid black;
   padding:5% 15%;
@@ -88,6 +89,13 @@ img {
   grid-row-gap: 10px;
   font-family: $font;
   font-size: 18px;
+  span{
+    font-weight: 600;
+  }
+  .nickname{
+    color: $color-blue;
+
+  }
   }
 
   .teachers-box__name {
