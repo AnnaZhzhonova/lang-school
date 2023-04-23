@@ -246,7 +246,7 @@ img {
   -webkit-overflow-scrolling: touch;
 }
 
-.teachers-box_info::-webkit-scrollbar {
+.teachers-box_inner::-webkit-scrollbar {
   display: none;
 }
 
@@ -261,4 +261,8 @@ img {
 }
 .job-offer span {
   text-decoration: underline;
+}
+.job-offer a {
+  font-weight: 600;
+  color: #58C8E9;
 }

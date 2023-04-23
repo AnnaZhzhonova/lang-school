@@ -128,7 +128,7 @@ img {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
-.teachers-box_info::-webkit-scrollbar{
+.teachers-box_inner::-webkit-scrollbar{
   display: none;
 }
 
@@ -141,6 +141,10 @@ img {
   margin-top: 60px;
   span{
     text-decoration: underline;
+  }
+  a{
+    font-weight: 600;
+    color: $color-blue;
   }
 }
 
