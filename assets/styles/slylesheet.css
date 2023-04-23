@@ -98,7 +98,7 @@ img {
   height: 500px;
   display: -ms-grid;
   display: grid;
-  border: 2px solid black;
+  border: 2px solid rgb(223, 218, 218);
   padding: 5% 15%;
   -ms-grid-columns: 1fr 0px 1fr 0px 2fr 0px 1fr 0px 1fr;
   grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
