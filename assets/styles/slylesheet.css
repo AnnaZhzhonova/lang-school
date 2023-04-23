@@ -252,7 +252,7 @@ img {
 
 .schedule {
   position: relative;
-  height: 1900px;
+  margin: 0 0 60px 0;
   background-image: url(../images/Ellipse-blue.svg), url(../images/Ellipse-pink.svg);
   background-position: top 0 right 0, bottom 0 left 0;
   background-repeat: no-repeat;
@@ -348,6 +348,7 @@ img {
 }
 
 .about-school {
+  margin: 0 0 60px 0;
   background-image: url(../images/Ellipse-blue.svg), url(../images/Ellipse-pink.svg);
   background-position: top 0 right 0, bottom 0 left 0;
   background-repeat: no-repeat;
@@ -625,6 +626,7 @@ img {
   }
 }
 .payment {
+  margin: 0 0 60px 0;
   background-image: url(../images/Ellipse-blue.svg), url(../images/Ellipse-pink.svg);
   background-position: top 0 right 0, bottom 0 left 0;
   background-repeat: no-repeat;
