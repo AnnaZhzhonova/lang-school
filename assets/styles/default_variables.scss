@@ -23,9 +23,29 @@ $font: 'Noto Sans';
 @mixin font-h1 {
     font-family: 'Noto Sans';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 80px;
     line-height: 103px;
+}
+@mixin font-h11 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+}
+@mixin font-h111 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    line-height: 92px;
+    font-weight: 800;
+    font-size: 48px;
+}
+@mixin font-h12 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 62px;
+    font-size: 50px;
 }
 
 @mixin font-h2 {
@@ -36,6 +56,47 @@ $font: 'Noto Sans';
     line-height: 82px;
     text-transform: uppercase;
 }
+@mixin font-36 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+}
+@mixin font-30 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+@mixin font-24 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;}
+
+@mixin font-20 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;}
+
+@mixin font-18 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;}
+
+@mixin font-16 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;}
+
+@mixin font-13 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;}
 
 @mixin payment__font-p {
     font-family: $font;

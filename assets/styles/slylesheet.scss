@@ -8,7 +8,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   display: flex;
   flex-direction: column;
@@ -43,8 +42,128 @@ img {
   width: 244px;
   height: 7px;
   background-color: $color-pink;
+}
 
+//header
+.header__conteiner {
+display: flex;
+flex-direction: row;
+height: 115px;
+max-width: 1140px;
+margin: 0 auto;
+padding: 20px;
+justify-content: space-between;
+align-items: center;
+.a__logo{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+}
+.telegram__icon {
+  width: 30px;
+  height: 30px;
+}
+.header__a:hover {
+  color: red;
+  }
+.header__a {
+  text-decoration: none;
+  color: black;
+  }
+  }
+.header__ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;}
+.header__li {
+  @include font-24;
+  padding: 15px;
+  }
+  //main
+.main__conteiner {
+  max-width: 1140px;
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  overflow-y: auto;
+  border-bottom: 2px solid rgb(221, 217, 217);
+  .main__img {
+    max-width: 100%;
+  }
+  .main__conteinerflex {
+    display: flex;
+    width: 100%;
+    max-height: 537px;
+    margin: 0 auto;
 
+   .main__menu {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    align-items: center;
+    justify-content: center;
+    }
+    .main__h1text {
+    display: flex;
+    flex-direction: column;
+    max-width: 570px;
+    padding: 20px 0 20px 20px;
+    background-image: url(../images/Ellipse-28.svg),
+    url(../images/Ellipse-29.svg);
+    background-position: top -20px left 0, top -20px right 0;
+    background-repeat: no-repeat;
+    }}}
+
+  .main__h1{
+    @include font-h1;
+    white-space: nowrap;
+  }
+  .main__text {
+    @include font-24;
+    color: #536268;
+  }
+  .main__a {
+    @include font-36;
+    text-decoration: none;
+    color: black;
+    }
+  .main__a_redline {
+    text-decoration: none;
+    @include font-36;
+    color: black;
+    border-bottom: 4px solid red;
+    }
+  .main__a:hover {
+      color: red;
+      }
+   .main__a_redline:hover {
+      color: red;
+      border-bottom: 2px solid red;
+      }
+//main
+.footer__conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: 115px;
+  padding: 20px;
+  align-items: center;
+  margin-top: auto;
+  .footer__ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    .footer__a:hover {
+       color: red;
+    }
+    .footer__a {
+      text-decoration: none;
+      color: black;
+    }}}
+.footer__li {
+  @include font-24;
+  padding: 15px;
 }
 
 //Расписание занятий
@@ -292,10 +411,68 @@ img {
 }
 
 //адаптив планшет
-@media (min-width:766px) and (max-width:1023px) {}
+@media (min-width:766px) and (max-width:1023px) {
+    //Header
+    .header__li {
+      @include font-20;
+      }
+
+    //Footer
+    .footer__li {
+      @include font-20;
+     }
+
+   //Hero
+  .main__h1{
+    @include font-h11;
+    white-space: nowrap;
+  }
+  .main__a {
+    @include font-30;
+    }
+  .main__a_redline {
+    @include font-30;
+    }
+  .main__text {
+      @include font-24;
+    }
+}
+
 
 //адаптив мобайл
 @media screen and (max-width:767px) {
+
+  //Header
+  .header__li {
+    @include font-13;
+    padding: 0;
+    }
+  .header__ul {
+    display: flex;
+    flex-direction: column;
+    }
+
+  //Footer
+  .footer__li {
+    @include font-13;
+  }
+
+  //Hero
+   .main__h1{
+    @include font-h12;
+  }
+  .main__text {
+    @include font-18;
+  }
+  .main__a {
+    @include font-24;
+    }
+  .main__a_redline {
+    @include font-24;
+    }
+  .main__h1text {
+    background-size: 60%;
+    }
 
   //Расписание
   .schedule-pic {
@@ -462,3 +639,24 @@ img {
 
   @include payment__font-p;
 }
+
+//адаптив мобайл min
+@media screen and (max-width:574px) {
+  //main
+  .main__conteinerflex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+.main__h1text {
+    background-size: 60%;
+    display: flex;
+    flex-direction: column;
+  .main__h1{
+      @include font-h111;
+      }
+      .main__text {
+        @include font-18;
+      }
+  }}
