@@ -9,8 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  // Изза высоты появляется расстояние между header main footer
-/*   min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -46,6 +44,114 @@ img {
   background-color: $color-pink;
 }
 
+//наши преподаватели
+.teachers{
+  margin: 0 0 60px 0;
+  font-family: $font;
+  font-size: 18px;
+}
+.teachers-description{
+  margin: 60px 0 0 0;
+  p{
+    font-family: $font;
+    font-size: 18px;
+    span{
+      font-weight: 600;
+    }
+    a{
+      font-weight: 600;
+      color: $color-blue;
+    }
+  }
+  .teachers-country{
+    margin: 50px 0;
+    display: flex;
+    justify-content: column;
+    img{
+      width: 50px;
+      height: 30px;
+      z-index: 100;
+      margin-right: 10px;
+    }
+    h5{
+      font-weight: 600;
+    }
+  }
+}
+.teachers-box_inner{
+  margin:auto;
+  height: 500px;
+  display: grid;
+  border: 2px solid black;
+  padding:5% 15%;
+  grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
+  grid-template-rows: repeat(2, 2fr) 10fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  font-family: $font;
+  font-size: 18px;
+  span{
+    font-weight: 600;
+  }
+  .nickname{
+    color: $color-blue;
+
+  }
+  }
+
+  .teachers-box__name {
+    grid-area: 1 / 1 / 2 / 4;
+    text-align:start;
+}
+
+.teachers-box__social-net {
+  grid-area:  1 / 4 / 2 / 6;
+  text-align: center;
+
+  img{
+    width: 30px;
+    height: 30px;
+  }
+}
+.teachers-box__social-net {
+  text-align: center;
+}
+.teachers-box__info { grid-area:  3 / 1 / 4 / 6; }
+.teachers-box__language { grid-area:  2 / 1 / 3 / 6; }
+
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
+}
+.teachers-box_inner{
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.teachers-box_inner::-webkit-scrollbar{
+  display: none;
+}
+
+.job{
+  margin: 30px 0 60px;
+  font-family: $font;
+  font-size: 18px;
+}
+.job-offer{
+  margin-top: 60px;
+  span{
+    text-decoration: underline;
+  }
+  a{
+    font-weight: 600;
+    color: $color-blue;
+  }
+}
+
+
 //header
 .header__conteiner {
 display: flex;
@@ -56,63 +162,44 @@ margin: 0 auto;
 padding: 20px;
 justify-content: space-between;
 align-items: center;
-//лого сжимается красиво, если задать родительскому элементу размеры, а картинка остается 100%
-.a__telegram{
+.a__logo{
   display: inline-block;
   width: 130px;
   height: 130px;
 }
-/* .logo__icon {
-  width: 130px;
-  height: 130px;
- } */
- .telegram__icon {
+.telegram__icon {
   width: 30px;
   height: 30px;
- }
- .header__ul {
+}
+.header__a:hover {
+  color: red;
+  }
+.header__a {
+  text-decoration: none;
+  color: black;
+  }
+  }
+.header__ul {
   display: flex;
   flex-direction: row;
-  list-style-type: none;
-   .header__li {
-    @include font-24;
-    padding: 15px;
-    }
-    .header__a:hover {
-    color: red;
-    }
-    .header__a {
-    text-decoration: none;
-    color: black;
-    }
+  list-style-type: none;}
+.header__li {
+  @include font-24;
+  padding: 15px;
   }
-}
+  //main
 .main__conteiner {
   max-width: 1140px;
-  //высота просто 100% убирает прокрутку в секции main
   height: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding-bottom: 20px;
   overflow-y: auto;
-  position: relative;
   border-bottom: 2px solid rgb(221, 217, 217);
   .main__img {
     max-width: 100%;
   }
-/*   .ellipse28 {
-    position: absolute;
-    top: 200px;
-    z-index: -1;
-  }
-  .ellipse29 {
-    position: absolute;
-    top: 200px;
-    left: 300px;
-    z-index: -1;
-  } */
   .main__conteinerflex {
     display: flex;
-    //фиксированная ширина давала скролл на небольшик экранах
     width: 100%;
     max-height: 537px;
     margin: 0 auto;
@@ -124,52 +211,44 @@ align-items: center;
     align-items: center;
     justify-content: center;
     }
-    .main__a {
-    @include font-h2;
-    text-decoration: none;
-    color: black;
-    }
-    .main__a_redline {
-    text-decoration: none;
-    @include font-h2;
-    color: black;
-    border-bottom: 4px solid red;
-    }
-    .main__a:hover {
-      color: red;
-      }
-    .main__a_redline:hover {
-      color: red;
-      border-bottom: 2px solid red;
-      }
-
-   .main__h1text {
+    .main__h1text {
     display: flex;
     flex-direction: column;
-    width: 612px;
-    //паддинг не мешает, но если для правой стороны поставить 0,
-    //то на точке близкой к брейкпоинту (1023px) не будет горизонтального скролла
+    max-width: 570px;
     padding: 20px 0 20px 20px;
     background-image: url(../images/Ellipse-28.svg),
     url(../images/Ellipse-29.svg);
     background-position: top -20px left 0, top -20px right 0;
     background-repeat: no-repeat;
-  }}}
+    }}}
 
-.main__h1{
-  @include font-h1;
-  white-space: nowrap;
-}
-.main__text {
-  @include font-24;
-  color: #536268;
-}
-.main__a {
-  @include font-h2;
-  color: black;
+  .main__h1{
+    @include font-h1;
+    white-space: nowrap;
   }
-
-
+  .main__text {
+    @include font-24;
+    color: #536268;
+  }
+  .main__a {
+    @include font-36;
+    text-decoration: none;
+    color: black;
+    }
+  .main__a_redline {
+    text-decoration: none;
+    @include font-36;
+    color: black;
+    border-bottom: 4px solid red;
+    }
+  .main__a:hover {
+      color: red;
+      }
+   .main__a_redline:hover {
+      color: red;
+      border-bottom: 2px solid red;
+      }
+//main
 .footer__conteiner {
   display: flex;
   flex-direction: row;
@@ -183,20 +262,16 @@ align-items: center;
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    .footer__li {
-      @include font-24;
-      padding: 15px;
-    }
     .footer__a:hover {
        color: red;
     }
     .footer__a {
       text-decoration: none;
       color: black;
-    }
-    }
-
-
+    }}}
+.footer__li {
+  @include font-24;
+  padding: 15px;
 }
 
 //Расписание занятий
@@ -298,6 +373,7 @@ align-items: center;
 
 //О школе
 .about-school {
+  margin: 0 0 60px 0;
   background-image: url(../images/Ellipse-blue.svg),
     url(../images/Ellipse-pink.svg);
   background-position: top 0 right 0, bottom 0 left 0;
@@ -444,10 +520,68 @@ align-items: center;
 }
 
 //адаптив планшет
-@media (min-width:766px) and (max-width:1023px) {}
+@media (min-width:766px) and (max-width:1023px) {
+    //Header
+    .header__li {
+      @include font-20;
+      }
+
+    //Footer
+    .footer__li {
+      @include font-20;
+     }
+
+   //Hero
+  .main__h1{
+    @include font-h11;
+    white-space: nowrap;
+  }
+  .main__a {
+    @include font-30;
+    }
+  .main__a_redline {
+    @include font-30;
+    }
+  .main__text {
+      @include font-24;
+    }
+}
+
 
 //адаптив мобайл
 @media screen and (max-width:767px) {
+
+  //Header
+  .header__li {
+    @include font-13;
+    padding: 0;
+    }
+  .header__ul {
+    display: flex;
+    flex-direction: column;
+    }
+
+  //Footer
+  .footer__li {
+    @include font-13;
+  }
+
+  //Hero
+   .main__h1{
+    @include font-h12;
+  }
+  .main__text {
+    @include font-18;
+  }
+  .main__a {
+    @include font-24;
+    }
+  .main__a_redline {
+    @include font-24;
+    }
+  .main__h1text {
+    background-size: 60%;
+    }
 
   //Расписание
   .schedule-pic {
@@ -614,3 +748,25 @@ align-items: center;
 
   @include payment__font-p;
 }
+
+//адаптив мобайл min
+@media screen and (max-width:574px) {
+  //main
+  .main__conteinerflex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+.main__h1text {
+    background-size: 60%;
+    display: flex;
+    flex-direction: column;
+  .main__h1{
+      @include font-h111;
+      }
+      .main__text {
+        @include font-18;
+      }
+  }}
+
