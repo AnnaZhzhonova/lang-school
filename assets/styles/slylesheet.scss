@@ -153,6 +153,9 @@ img {
 
 
 //header
+.hamburger-menu{
+  display: none;
+}
 .header__conteiner {
 display: flex;
 flex-direction: row;
@@ -195,15 +198,17 @@ align-items: center;
   padding-bottom: 20px;
   overflow-y: auto;
   border-bottom: 2px solid rgb(221, 217, 217);
+}
   .main__img {
     max-width: 100%;
   }
   .main__conteinerflex {
     display: flex;
+    justify-content: center;
     width: 100%;
     max-height: 537px;
     margin: 0 auto;
-
+  }
    .main__menu {
     display: flex;
     flex-direction: column;
@@ -220,7 +225,7 @@ align-items: center;
     url(../images/Ellipse-29.svg);
     background-position: top -20px left 0, top -20px right 0;
     background-repeat: no-repeat;
-    }}}
+    }
 
   .main__h1{
     @include font-h1;
@@ -551,15 +556,101 @@ align-items: center;
 //адаптив мобайл
 @media screen and (max-width:767px) {
 
-  //Header
-  .header__li {
-    @include font-13;
-    padding: 0;
-    }
-  .header__ul {
-    display: flex;
-    flex-direction: column;
-    }
+ .navigation, .telegram__icon-box, .main__menu {
+  display: none
+ }
+ .header__conteiner{
+  flex-direction: row-reverse;
+ }
+
+ .hamburger-menu{
+  display: block;
+ }
+ #menu__toggle {
+  opacity: 0;
+  display: none;
+ }
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 40px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: $color-gray;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -10px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 10px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #FFF;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+.header__a {
+  display: block;
+  position: relative;
+  margin: 15px 0 15px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.header__a {
+  transition-duration: .25s;
+}
 
   //Footer
   .footer__li {
@@ -567,20 +658,23 @@ align-items: center;
   }
 
   //Hero
-   .main__h1{
-    @include font-h12;
+  .main__h1text{
+    width: 100%;
+    background-size: 60%;
   }
-  .main__text {
-    @include font-18;
+  .main__h1{
+    margin-bottom: 10px;
+    font-size:45px;
+    line-height: 70px;
   }
-  .main__a {
+  /* .main__a {
     @include font-24;
     }
   .main__a_redline {
     @include font-24;
-    }
-  .main__h1text {
-    background-size: 60%;
+    } */
+  .main__text {
+    font-size: 20px;
     }
 
   //Расписание
@@ -749,7 +843,7 @@ align-items: center;
   @include payment__font-p;
 }
 
-//адаптив мобайл min
+/* //адаптив мобайл min
 @media screen and (max-width:574px) {
   //main
   .main__conteinerflex {
@@ -769,4 +863,4 @@ align-items: center;
         @include font-18;
       }
   }}
-
+ */
