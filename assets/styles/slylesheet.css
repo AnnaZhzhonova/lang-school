@@ -770,6 +770,9 @@ img {
   line-height: 31px;
   width: 70%;
   margin-bottom: 10px;
+  border: 2px solid #DEDCDD;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .payment__th {
@@ -872,7 +875,9 @@ img {
   }
 }
 @media screen and (max-width: 767px) {
-  .navigation, .telegram__icon-box, .main__menu {
+  .navigation,
+.telegram__icon-box,
+.main__menu {
     display: none;
   }
   .header__conteiner {
