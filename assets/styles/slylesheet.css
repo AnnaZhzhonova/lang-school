@@ -55,8 +55,8 @@ img {
   background-color: #F45B5D;
 }
 
-
 .teachers {
+  margin: 0 0 60px 0;
   font-family: "Noto Sans";
   font-size: 18px;
 }
@@ -252,7 +252,7 @@ img {
 }
 
 .job {
-  margin-top: 30px;
+  margin: 30px 0 60px;
   font-family: "Noto Sans";
   font-size: 18px;
 }
@@ -266,7 +266,8 @@ img {
 .job-offer a {
   font-weight: 600;
   color: #58C8E9;
-=======
+}
+
 .header__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,7 +465,7 @@ img {
 
 .schedule {
   position: relative;
-  margin: 0 0 60px 0;
+  height: 1900px;
   background-image: url(../images/Ellipse-blue.svg), url(../images/Ellipse-pink.svg);
   background-position: top 0 right 0, bottom 0 left 0;
   background-repeat: no-repeat;
@@ -838,7 +839,6 @@ img {
   }
 }
 .payment {
-  margin: 0 0 60px 0;
   background-image: url(../images/Ellipse-blue.svg), url(../images/Ellipse-pink.svg);
   background-position: top 0 right 0, bottom 0 left 0;
   background-repeat: no-repeat;
@@ -989,5 +989,4 @@ img {
     font-weight: 400;
     font-size: 18px;
   }
-
 }
