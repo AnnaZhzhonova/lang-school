@@ -87,7 +87,7 @@ img {
 .teachers-description .teachers-country img {
   width: 50px;
   height: 30px;
-  z-index: 100;
+  z-index: 1;
   margin-right: 10px;
 }
 .teachers-description .teachers-country h5 {
@@ -268,6 +268,10 @@ img {
   color: #58C8E9;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .header__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,18 +335,24 @@ img {
   overflow-y: auto;
   border-bottom: 2px solid rgb(221, 217, 217);
 }
-.main__conteiner .main__img {
+
+.main__img {
   max-width: 100%;
 }
-.main__conteiner .main__conteinerflex {
+
+.main__conteinerflex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   max-height: 537px;
   margin: 0 auto;
 }
-.main__conteiner .main__conteinerflex .main__menu {
+
+.main__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,7 +368,8 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.main__conteiner .main__conteinerflex .main__h1text {
+
+.main__h1text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,55 +752,129 @@ img {
   }
 }
 @media screen and (max-width: 767px) {
-  .header__li {
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    padding: 0;
+  .navigation, .telegram__icon-box, .main__menu {
+    display: none;
   }
-  .header__ul {
+  .header__conteiner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  #menu__toggle {
+    opacity: 0;
+    display: none;
+  }
+  .menu__btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #536268;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -10px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 10px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #FFF;
+    z-index: 2;
+    -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+  .header__a {
+    display: block;
+    position: relative;
+    margin: 15px 0 15px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+  }
+  .menu__box {
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+  }
+  .header__a {
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
   }
   .footer__li {
     font-family: "Noto Sans";
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
-  }
-  .main__h1 {
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 800;
-    line-height: 62px;
-    font-size: 50px;
-  }
-  .main__text {
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-  }
-  .main__a {
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-  }
-  .main__a_redline {
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
   }
   .main__h1text {
+    width: 100%;
     background-size: 60%;
+  }
+  .main__h1 {
+    margin-bottom: 10px;
+    font-size: 45px;
+    line-height: 70px;
+  }
+  .main__text {
+    font-size: 20px;
   }
   .schedule-pic {
     height: 33px;
@@ -833,9 +918,11 @@ img {
   }
   .section-title {
     font-size: 35px;
+    z-index: 0.999;
   }
   .section-title::after {
     bottom: -30px;
+    z-index: 0.999;
   }
 }
 .payment {
@@ -952,41 +1039,4 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 31px;
-}
-
-@media screen and (max-width: 574px) {
-  .main__conteinerflex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .main__h1text {
-    background-size: 60%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .main__h1text .main__h1 {
-    font-family: "Noto Sans";
-    font-style: normal;
-    line-height: 92px;
-    font-weight: 800;
-    font-size: 48px;
-  }
-  .main__h1text .main__text {
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-  }
 }
