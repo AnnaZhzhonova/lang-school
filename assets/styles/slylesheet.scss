@@ -70,7 +70,7 @@ img {
     img{
       width: 50px;
       height: 30px;
-      z-index: 100;
+      z-index: 1;
       margin-right: 10px;
     }
     h5{
@@ -579,7 +579,7 @@ align-items: center;
   width: 30px;
   height: 30px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 3;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -590,6 +590,7 @@ align-items: center;
   height: 3px;
   border-radius: 5px;
   background-color: $color-gray;
+
 }
 .menu__btn > span::before {
   content: '';
@@ -613,6 +614,7 @@ align-items: center;
   list-style: none;
   text-align: center;
   background-color: #FFF;
+  z-index: 2;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 }
 .header__a {
@@ -667,12 +669,6 @@ align-items: center;
     font-size:45px;
     line-height: 70px;
   }
-  /* .main__a {
-    @include font-24;
-    }
-  .main__a_redline {
-    @include font-24;
-    } */
   .main__text {
     font-size: 20px;
     }
@@ -725,10 +721,12 @@ align-items: center;
   //О школе
   .section-title {
     font-size: 35px;
+    z-index: 0.999;
   }
 
   .section-title::after {
     bottom: -30px;
+    z-index: 0.999;
   }
 
 }
@@ -773,18 +771,14 @@ align-items: center;
 .payment__table {
   @include payment__font-p;
   // font-weight: bold;
-
   width: 70%;
-
   margin-bottom: 10px;
 }
 
 .payment__th {
   border: 1px solid $color-gray-light;
   height: 60px;
-
   padding: 10px;
-
   // font-weight: bold;
 }
 
@@ -842,25 +836,3 @@ align-items: center;
 
   @include payment__font-p;
 }
-
-/* //адаптив мобайл min
-@media screen and (max-width:574px) {
-  //main
-  .main__conteinerflex {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-}
-.main__h1text {
-    background-size: 60%;
-    display: flex;
-    flex-direction: column;
-  .main__h1{
-      @include font-h111;
-      }
-      .main__text {
-        @include font-18;
-      }
-  }}
- */
