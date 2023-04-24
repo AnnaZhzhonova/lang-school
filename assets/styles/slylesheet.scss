@@ -910,12 +910,12 @@ img {
   //О школе
   .section-title {
     font-size: 35px;
-    z-index: 0.999;
+    z-index: -1;
   }
 
   .section-title::after {
     bottom: -30px;
-    z-index: 0.999;
+    z-index: -1;
   }
 
 }
