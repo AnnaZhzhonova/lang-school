@@ -158,15 +158,9 @@ img {
   color: black;
 }
 
-.main__a_redline {
-  text-decoration: none;
-  @include font-36;
+.main__a:hover {
   color: black;
   border-bottom: 4px solid red;
-}
-
-.main__a:hover {
-  color: red;
 }
 
 .main__a_redline:hover {

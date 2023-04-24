@@ -210,18 +210,9 @@ img {
   color: black;
 }
 
-.main__a_redline {
-  text-decoration: none;
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
+.main__a:hover {
   color: black;
   border-bottom: 4px solid red;
-}
-
-.main__a:hover {
-  color: red;
 }
 
 .main__a_redline:hover {
