@@ -77,19 +77,27 @@ img {
   margin: 0 auto;
   padding: 20px;
 }
-.header__conteiner .logo__icon {
+
+.header__conteiner--border {
+  border-bottom: 2px solid rgb(221, 217, 217);
+}
+
+.logo__icon {
   display: inline-block;
   width: 130px;
   height: 130px;
 }
-.header__conteiner .telegram__icon {
+
+.telegram__icon {
   width: 30px;
   height: 30px;
 }
-.header__conteiner .header__a:hover {
+
+.header__a:hover {
   color: red;
 }
-.header__conteiner .header__a {
+
+.header__a {
   text-decoration: none;
   color: black;
 }
