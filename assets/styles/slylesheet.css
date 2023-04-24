@@ -54,7 +54,6 @@ img {
   background-color: #F45B5D;
 }
 
-
 .hamburger-menu {
   display: none;
 }
@@ -874,9 +873,7 @@ img {
   }
 }
 @media screen and (max-width: 767px) {
-  .navigation,
-.telegram__icon-box,
-.main__menu {
+  .navigation, .telegram__icon-box, .main__menu1 {
     display: none;
   }
   .header__conteiner {
@@ -988,33 +985,17 @@ img {
     font-weight: 400;
     font-size: 16px;
   }
+  .main__h1text {
+    width: 100%;
+    background-size: 60%;
+  }
   .main__h1 {
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 800;
-    line-height: 62px;
-    font-size: 50px;
+    margin-bottom: 10px;
+    font-size: 45px;
+    line-height: 70px;
   }
   .main__text {
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-  }
-  .main__a {
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-  }
-  .main__a_redline {
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-  }
-  .main__h1text {
-    background-size: 60%;
+    font-size: 20px;
   }
   .schedule-pic {
     height: 33px;
@@ -1064,53 +1045,4 @@ img {
     bottom: -30px;
     z-index: 0.999;
   }
-}
-
-  .main__conteinerflex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .main__h1text {
-    background-size: 60%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    z-index: -1;
-  }
-  .main__h1text .main__h1 {
-    font-family: "Noto Sans";
-    font-style: normal;
-    line-height: 72px;
-    font-weight: 800;
-    font-size: 45px;
-  }
-  .main__h1text .main__text {
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-  }
-
-  .main__menu1 {
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    padding: 20px 0 20px 20px;
-  }
-
 }
