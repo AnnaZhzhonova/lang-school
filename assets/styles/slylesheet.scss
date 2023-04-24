@@ -99,6 +99,9 @@ img {
 .header__li {
   padding: 15px;
   @include font-24;
+  .dropdown-toggle{
+    @include reset
+  }
 }
 
 //main
