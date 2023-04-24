@@ -113,6 +113,15 @@ img {
   list-style-type: none;
 }
 
+.header__ul--dropdown {
+  width: 180px;
+  height: 160px;
+}
+
+.header__li--dropdown {
+  margin: 10px 0;
+}
+
 .header__li {
   padding: 15px;
   font-family: "Noto Sans";
