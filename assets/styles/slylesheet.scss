@@ -60,28 +60,30 @@ img {
   margin: 0 auto;
   padding: 20px;
 }
-.header__conteiner--border{
+
+.header__conteiner--border {
   border-bottom: 2px solid rgb(221, 217, 217);
 }
-  .logo__icon {
-    display: inline-block;
-    width: 130px;
-    height: 130px;
-  }
 
-  .telegram__icon {
-    width: 30px;
-    height: 30px;
-  }
+.logo__icon {
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+}
 
-  .header__a:hover {
-    color: red;
-  }
+.telegram__icon {
+  width: 30px;
+  height: 30px;
+}
 
-  .header__a {
-    text-decoration: none;
-    color: black;
-  }
+.header__a:hover {
+  color: red;
+}
+
+.header__a {
+  text-decoration: none;
+  color: black;
+}
 
 
 .header__ul {
@@ -89,17 +91,21 @@ img {
   flex-direction: row;
   list-style-type: none;
 }
-.header__ul--dropdown{
+
+.header__ul--dropdown {
   width: 180px;
   height: 160px;
 }
-.header__li--dropdown{
+
+.header__li--dropdown {
   margin: 10px 0;
 }
+
 .header__li {
   padding: 15px;
   @include font-24;
-  .dropdown-toggle{
+
+  .dropdown-toggle {
     @include reset
   }
 }
@@ -255,7 +261,7 @@ img {
   height: 500px;
   margin: auto;
   padding: 5% 15%;
-  border: 2px solid  rgb(223, 218, 218);
+  border: 2px solid rgb(223, 218, 218);
   font-family: $font;
   font-size: 18px;
 
@@ -352,7 +358,7 @@ img {
   background-color: #fff;
 }
 
-.schedule-btn{
+.schedule-btn {
   color: $color-blue;
 }
 
@@ -722,178 +728,194 @@ img {
 }
 
 @media screen and (max-width:767px) {
-  .navigation, .telegram__icon-box, .main__menu1 {
-   display: none
-  }
-  .header__conteiner{
-   flex-direction: row-reverse;
+
+  .navigation,
+  .telegram__icon-box,
+  .main__menu1 {
+    display: none
   }
 
-  .hamburger-menu{
-   display: block;
+  .header__conteiner {
+    flex-direction: row-reverse;
   }
+
+  .hamburger-menu {
+    display: block;
+  }
+
   #menu__toggle {
-   opacity: 0;
-   display: none;
+    opacity: 0;
+    display: none;
   }
- .menu__btn {
-   display: flex;
-   align-items: center;
-   position: absolute;
-   top: 40px;
-   left: 20px;
-   width: 30px;
-   height: 30px;
-   cursor: pointer;
-   z-index: 3;
- }
- .menu__btn > span,
- .menu__btn > span::before,
- .menu__btn > span::after {
-   display: block;
-   position: absolute;
-   width: 100%;
-   height: 3px;
-   border-radius: 5px;
-   background-color: $color-gray;
 
- }
- .menu__btn > span::before {
-   content: '';
-   top: -10px;
- }
- .menu__btn > span::after {
-   content: '';
-   top: 10px;
- }
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 3;
+  }
 
- .menu__box {
-   display: block;
-   position: fixed;
-   visibility: hidden;
-   top: 0;
-   left: -100%;
-   width: 100%;
-   height: 100%;
-   margin: 0;
-   padding: 80px 0;
-   list-style: none;
-   text-align: center;
-   background-color: #FFF;
-   z-index: 2;
-   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
- }
- .header__a {
-   display: block;
-   position: relative;
-   margin: 15px 0 15px 0;
-   text-transform: uppercase;
-   font-weight: 600;
-   font-size: 24px;
- }
+  .menu__btn>span,
+  .menu__btn>span::before,
+  .menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: $color-gray;
 
- #menu__toggle:checked ~ .menu__btn > span {
-   transform: rotate(45deg);
- }
- #menu__toggle:checked ~ .menu__btn > span::before {
-   top: 0;
-   transform: rotate(0);
- }
- #menu__toggle:checked ~ .menu__btn > span::after {
-   top: 0;
-   transform: rotate(90deg);
- }
- #menu__toggle:checked ~ .menu__box {
-   visibility: visible;
-   left: 0;
- }
+  }
 
- .menu__btn > span,
- .menu__btn > span::before,
- .menu__btn > span::after {
-   transition-duration: .25s;
- }
- .menu__box {
-   transition-duration: .25s;
- }
- .header__a {
-   transition-duration: .25s;
- }
+  .menu__btn>span::before {
+    content: '';
+    top: -10px;
+  }
 
-   //Footer
-   .footer__li {
-     @include font-13;
-   }
+  .menu__btn>span::after {
+    content: '';
+    top: 10px;
+  }
 
-   //Hero
-   .main__h1text{
-     width: 100%;
-     background-size: 60%;
-   }
-   .main__h1{
-     margin-bottom: 10px;
-     font-size:45px;
-     line-height: 70px;
-   }
-   .main__text {
-     font-size: 20px;
-     }
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #FFF;
+    z-index: 2;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
 
-   //Расписание
-   .schedule-pic {
-     height: 33px;
-   }
+  .header__a {
+    display: block;
+    position: relative;
+    margin: 15px 0 15px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+  }
 
-   .table__text,
-   .table__link {
-     font-size: 16px;
-   }
+  #menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+  }
 
-   .table {
-     margin: 50px auto;
-     width: 90%;
+  #menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+  }
 
-     td {
-       padding: 10px 10px;
-     }
-   }
+  #menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
 
-   .table__box {
-     display: flex;
-     -ms-flex-wrap: nowrap;
-     flex-wrap: nowrap;
-   }
+  #menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+  }
 
-   .table {
-     display: flex;
-     flex-wrap: nowrap;
-     overflow-x: scroll;
-     overflow-y: scroll;
-     -webkit-overflow-scrolling: touch;
+  .menu__btn>span,
+  .menu__btn>span::before,
+  .menu__btn>span::after {
+    transition-duration: .25s;
+  }
 
-     tbody {
-       width: 100%;
-     }
+  .menu__box {
+    transition-duration: .25s;
+  }
 
-     tr {
-       min-width: 100%;
-     }
-   }
+  .header__a {
+    transition-duration: .25s;
+  }
 
-   .table::-webkit-scrollbar {
-     display: none;
-   }
+  //Footer
+  .footer__li {
+    @include font-13;
+  }
 
-   //О школе
-   .section-title {
-     font-size: 35px;
-     z-index: 0.999;
-   }
+  //Hero
+  .main__h1text {
+    width: 100%;
+    background-size: 60%;
+  }
 
-   .section-title::after {
-     bottom: -30px;
-     z-index: 0.999;
-   }
+  .main__h1 {
+    margin-bottom: 10px;
+    font-size: 45px;
+    line-height: 70px;
+  }
 
- }
+  .main__text {
+    font-size: 20px;
+  }
 
+  //Расписание
+  .schedule-pic {
+    height: 33px;
+  }
+
+  .table__text,
+  .table__link {
+    font-size: 16px;
+  }
+
+  .table {
+    margin: 50px auto;
+    width: 90%;
+
+    td {
+      padding: 10px 10px;
+    }
+  }
+
+  .table__box {
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .table {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    tbody {
+      width: 100%;
+    }
+
+    tr {
+      min-width: 100%;
+    }
+  }
+
+  .table::-webkit-scrollbar {
+    display: none;
+  }
+
+  //О школе
+  .section-title {
+    font-size: 35px;
+    z-index: 0.999;
+  }
+
+  .section-title::after {
+    bottom: -30px;
+    z-index: 0.999;
+  }
+
+}
