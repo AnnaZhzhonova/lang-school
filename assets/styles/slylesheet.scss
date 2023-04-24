@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -29,94 +30,265 @@ img {
 }
 
 .section-title {
-  @include font-h2;
   position: relative;
   margin: 46px 0 35px 0;
+  @include font-h2;
 }
 
 .section-title::after {
   content: "";
   position: absolute;
-  left: 0;
   bottom: -35px;
+  left: 0;
   width: 244px;
   height: 7px;
   background-color: $color-pink;
 }
 
+//header
+.hamburger-menu {
+  display: none;
+}
+
+.header__conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 115px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .logo__icon {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+  }
+
+  .telegram__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header__a:hover {
+    color: red;
+  }
+
+  .header__a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.header__ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.header__li {
+  padding: 15px;
+  @include font-24;
+}
+
+//main
+.main__conteiner {
+  max-width: 1140px;
+  height: 100%;
+  margin: 0 auto;
+  overflow-y: auto;
+
+}
+
+.main__img {
+  max-width: 100%;
+}
+
+.main__conteinerflex {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.main__menu1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main__h1text {
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+  padding: 20px 0 20px 20px;
+  background-image: url(../images/Ellipse-28.svg),
+    url(../images/Ellipse-29.svg);
+  background-position: top -20px left 0, top -20px right 0;
+  background-repeat: no-repeat;
+}
+
+.main__h1 {
+  @include font-h1;
+  white-space: nowrap;
+}
+
+.main__text {
+  @include font-24;
+  color: #536268;
+  padding-top: 20px
+}
+
+.main__a {
+  @include font-36;
+  text-decoration: none;
+  color: black;
+}
+
+.main__a_redline {
+  text-decoration: none;
+  @include font-36;
+  color: black;
+  border-bottom: 4px solid red;
+}
+
+.main__a:hover {
+  color: red;
+}
+
+.main__a_redline:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+//footer
+.footer__conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: auto;
+  padding: 20px;
+  width: 100%;
+  height: 115px;
+  border-top: 2px solid rgb(221, 217, 217);
+}
+
+.footer__ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.footer__a:hover {
+  color: red;
+}
+
+.footer__a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer__li {
+  @include font-24;
+  padding: 15px;
+}
+
 //наши преподаватели
-.teachers{
+.teachers {
+  margin: 0 0 60px 0;
   font-family: $font;
   font-size: 18px;
 }
-.teachers-description{
+
+.teachers-description {
   margin: 60px 0 0 0;
-  p{
+
+  p {
     font-family: $font;
     font-size: 18px;
-    span{
+
+    span {
       font-weight: 600;
     }
-    a{
+
+    a {
       font-weight: 600;
       color: $color-blue;
     }
   }
-  .teachers-country{
-    margin: 50px 0;
+
+  .teachers-country {
     display: flex;
     justify-content: column;
-    img{
+    margin: 50px 0;
+
+    img {
       width: 50px;
       height: 30px;
-      z-index: 100;
       margin-right: 10px;
+      z-index: 1;
     }
-    h5{
+
+    h5 {
       font-weight: 600;
     }
   }
 }
-.teachers-box_inner{
-  margin:auto;
-  height: 500px;
+
+.teachers-box_inner {
   display: grid;
-  border: 2px solid  rgb(223, 218, 218);
-  padding:5% 15%;
   grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
   grid-template-rows: repeat(2, 2fr) 10fr;
   grid-column-gap: 0px;
   grid-row-gap: 10px;
+  height: 500px;
+  margin: auto;
+  padding: 5% 15%;
+  border: 2px solid  rgb(223, 218, 218);
   font-family: $font;
   font-size: 18px;
-  span{
+
+  span {
     font-weight: 600;
   }
-  .nickname{
+
+  .nickname {
     color: $color-blue;
 
   }
-  }
+}
 
-  .teachers-box__name {
-    grid-area: 1 / 1 / 2 / 4;
-    text-align:start;
+.teachers-box__name {
+  grid-area: 1 / 1 / 2 / 4;
+  text-align: start;
 }
 
 .teachers-box__social-net {
-  grid-area:  1 / 4 / 2 / 6;
+  grid-area: 1 / 4 / 2 / 6;
   text-align: center;
 
-  img{
+  img {
     width: 30px;
     height: 30px;
   }
 }
+
 .teachers-box__social-net {
   text-align: center;
 }
-.teachers-box__info { grid-area:  3 / 1 / 4 / 6; }
-.teachers-box__language { grid-area:  2 / 1 / 3 / 6; }
+
+.teachers-box__info {
+  grid-area: 3 / 1 / 4 / 6;
+}
+
+.teachers-box__language {
+  grid-area: 2 / 1 / 3 / 6;
+}
 
 
 .carousel-control-next-icon {
@@ -126,156 +298,39 @@ img {
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
 }
-.teachers-box_inner{
+
+.teachers-box_inner {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
-.teachers-box_inner::-webkit-scrollbar{
+
+.teachers-box_inner::-webkit-scrollbar {
   display: none;
 }
 
-.job{
-  margin-top: 30px;
+.job {
+  margin: 30px 0 60px;
   font-family: $font;
   font-size: 18px;
 }
-.job-offer{
+
+.job-offer {
   margin-top: 60px;
-  span{
+
+  span {
     text-decoration: underline;
   }
-  a{
+
+  a {
     font-weight: 600;
     color: $color-blue;
   }
 }
 
-
-//header
-.header__conteiner {
-display: flex;
-flex-direction: row;
-height: 115px;
-max-width: 1140px;
-margin: 0 auto;
-padding: 20px;
-justify-content: space-between;
-align-items: center;
-.a__logo{
-  display: inline-block;
-  width: 130px;
-  height: 130px;
-}
-.telegram__icon {
-  width: 30px;
-  height: 30px;
-}
-.header__a:hover {
-  color: red;
-  }
-.header__a {
-  text-decoration: none;
-  color: black;
-  }
-  }
-.header__ul {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;}
-.header__li {
-  @include font-24;
-  padding: 15px;
-  }
-  //main
-.main__conteiner {
-  max-width: 1140px;
-  height: 100%;
-  margin: 0 auto;
-  padding-bottom: 20px;
-  overflow-y: auto;
-  border-bottom: 2px solid rgb(221, 217, 217);
-  .main__img {
-    max-width: 100%;
-  }
-  .main__conteinerflex {
-    display: flex;
-    width: 100%;
-    max-height: 537px;
-    margin: 0 auto;
-
-   .main__menu {
-    display: flex;
-    flex-direction: column;
-    width: 570px;
-    align-items: center;
-    justify-content: center;
-    }
-    .main__h1text {
-    display: flex;
-    flex-direction: column;
-    max-width: 570px;
-    padding: 20px 0 20px 20px;
-    background-image: url(../images/Ellipse-28.svg),
-    url(../images/Ellipse-29.svg);
-    background-position: top -20px left 0, top -20px right 0;
-    background-repeat: no-repeat;
-    }}}
-
-  .main__h1{
-    @include font-h1;
-    white-space: nowrap;
-  }
-  .main__text {
-    @include font-24;
-    color: #536268;
-  }
-  .main__a {
-    @include font-36;
-    text-decoration: none;
-    color: black;
-    }
-  .main__a_redline {
-    text-decoration: none;
-    @include font-36;
-    color: black;
-    border-bottom: 4px solid red;
-    }
-  .main__a:hover {
-      color: red;
-      }
-   .main__a_redline:hover {
-      color: red;
-      border-bottom: 2px solid red;
-      }
-//main
-.footer__conteiner {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  width: 100%;
-  height: 115px;
-  padding: 20px;
-  align-items: center;
-  margin-top: auto;
-  .footer__ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    .footer__a:hover {
-       color: red;
-    }
-    .footer__a {
-      text-decoration: none;
-      color: black;
-    }}}
-.footer__li {
-  @include font-24;
-  padding: 15px;
-}
-
 //Расписание занятий
 .schedule {
   position: relative;
+  margin: 0 0 60px 0;
   height: 1900px;
   background-image: url(../images/Ellipse-blue.svg),
     url(../images/Ellipse-pink.svg);
@@ -411,8 +466,8 @@ align-items: center;
 }
 
 .school-content__icon {
-  width: 15px;
   margin: 0 5px 5px 0;
+  width: 15px;
 }
 
 //чеклист
@@ -433,8 +488,8 @@ align-items: center;
 .checklist__link {
   font-family: $font;
   font-size: 18px;
-  color: $color-gray;
   font-weight: 600;
+  color: $color-gray;
 }
 
 .checklist-desc {
@@ -466,26 +521,26 @@ align-items: center;
 
 .checklist-subtitle--english::before {
   content: '';
-  background-image: url(../images/GB_flag.svg);
-  background-size: contain;
-  display: inline-block;
   position: absolute;
   top: 5px;
   left: -40px;
+  display: inline-block;
   width: 37px;
   height: 18px;
+  background-image: url(../images/GB_flag.svg);
+  background-size: contain;
 }
 
 .checklist-subtitle--deutsch::before {
   content: '';
-  background-image: url(../images/Germany_flag.svg);
-  background-size: contain;
-  display: inline-block;
   position: absolute;
   top: 5px;
   left: -40px;
+  display: inline-block;
   width: 35px;
   height: 18px;
+  background-image: url(../images/Germany_flag.svg);
+  background-size: contain;
 }
 
 .section-subtitle--test,
@@ -496,150 +551,31 @@ align-items: center;
 
 .section-subtitle--test::before {
   content: '';
-  background-image: url(../images/tests.svg);
-  background-size: contain;
-  display: inline-block;
   position: absolute;
   left: -60px;
   top: -10px;
+  display: inline-block;
   width: 50px;
   height: 55px;
+  background-image: url(../images/tests.svg);
+  background-size: contain;
 }
 
 .section-subtitle--info::before {
   content: '';
-  background-image: url(../images/laptop.svg);
-  background-size: contain;
-  display: inline-block;
   position: absolute;
   left: -60px;
   top: -10px;
+  display: inline-block;
   width: 50px;
   height: 50px;
-}
-
-//адаптив планшет
-@media (min-width:766px) and (max-width:1023px) {
-    //Header
-    .header__li {
-      @include font-20;
-      }
-
-    //Footer
-    .footer__li {
-      @include font-20;
-     }
-
-   //Hero
-  .main__h1{
-    @include font-h11;
-    white-space: nowrap;
-  }
-  .main__a {
-    @include font-30;
-    }
-  .main__a_redline {
-    @include font-30;
-    }
-  .main__text {
-      @include font-24;
-    }
-}
-
-
-//адаптив мобайл
-@media screen and (max-width:767px) {
-
-  //Header
-  .header__li {
-    @include font-13;
-    padding: 0;
-    }
-  .header__ul {
-    display: flex;
-    flex-direction: column;
-    }
-
-  //Footer
-  .footer__li {
-    @include font-13;
-  }
-
-  //Hero
-   .main__h1{
-    @include font-h12;
-  }
-  .main__text {
-    @include font-18;
-  }
-  .main__a {
-    @include font-24;
-    }
-  .main__a_redline {
-    @include font-24;
-    }
-  .main__h1text {
-    background-size: 60%;
-    }
-
-  //Расписание
-  .schedule-pic {
-    height: 33px;
-  }
-
-  .table__text,
-  .table__link {
-    font-size: 16px;
-  }
-
-  .table {
-    margin: 50px auto;
-    width: 90%;
-
-    td {
-      padding: 10px 10px;
-    }
-  }
-
-  .table__box {
-    display: flex;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
-
-  .table {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-
-    tbody {
-      width: 100%;
-    }
-
-    tr {
-      min-width: 100%;
-    }
-  }
-
-  .table::-webkit-scrollbar {
-    display: none;
-  }
-
-  //О школе
-  .section-title {
-    font-size: 35px;
-  }
-
-  .section-title::after {
-    bottom: -30px;
-  }
-
+  background-image: url(../images/laptop.svg);
+  background-size: contain;
 }
 
 // Оплата Публичная оферта Политика конфиденциальности
 .payment {
+  margin: 0 0 60px 0;
   background-image: url(../images/Ellipse-blue.svg),
     url(../images/Ellipse-pink.svg);
   background-position: top 0 right 0, bottom 0 left 0;
@@ -678,18 +614,18 @@ align-items: center;
 .payment__table {
   @include payment__font-p;
   // font-weight: bold;
-
   width: 70%;
 
   margin-bottom: 10px;
+
+  border: 2px solid $color-gray-light;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .payment__th {
   border: 1px solid $color-gray-light;
   height: 60px;
-
   padding: 10px;
-
   // font-weight: bold;
 }
 
@@ -748,8 +684,234 @@ align-items: center;
   @include payment__font-p;
 }
 
+//адаптив планшет
+@media (min-width:766px) and (max-width:1023px) {
+
+  //Header
+  .header__li {
+    @include font-20;
+  }
+
+  //Footer
+  .footer__li {
+    @include font-20;
+  }
+
+  //Hero
+  .main__h1 {
+    @include font-h11;
+    white-space: nowrap;
+  }
+
+  .main__a {
+    @include font-30;
+  }
+
+  .main__a_redline {
+    @include font-30;
+  }
+
+  .main__text {
+    @include font-24;
+  }
+}
+
+//адаптив мобайл
+@media screen and (max-width:767px) {
+
+  .navigation,
+  .telegram__icon-box,
+  .main__menu {
+    display: none
+  }
+
+  .header__conteiner {
+    flex-direction: row-reverse;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+    display: none;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .menu__btn>span,
+  .menu__btn>span::before,
+  .menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: $color-gray;
+
+  }
+
+  .menu__btn>span::before {
+    content: '';
+    top: -10px;
+  }
+
+  .menu__btn>span::after {
+    content: '';
+    top: 10px;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #FFF;
+    z-index: 2;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+
+  .header__a {
+    display: block;
+    position: relative;
+    margin: 15px 0 15px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  #menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__btn>span,
+  .menu__btn>span::before,
+  .menu__btn>span::after {
+    transition-duration: .25s;
+  }
+
+  .menu__box {
+    transition-duration: .25s;
+  }
+
+  .header__a {
+    transition-duration: .25s;
+  }
+
+  //Footer
+  .footer__li {
+    @include font-13;
+  }
+
+  //Hero
+  .main__h1{
+    @include font-h12;
+  }
+  .main__text {
+    @include font-18;
+  }
+  .main__a {
+    @include font-24;
+    }
+  .main__a_redline {
+    @include font-24;
+    }
+  .main__h1text {
+    background-size: 60%;
+    }
+
+
+  //Расписание
+  .schedule-pic {
+    height: 33px;
+  }
+
+  .table__text,
+  .table__link {
+    font-size: 16px;
+  }
+
+  .table {
+    margin: 50px auto;
+    width: 90%;
+
+    td {
+      padding: 10px 10px;
+    }
+  }
+
+  .table__box {
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .table {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    tbody {
+      width: 100%;
+    }
+
+    tr {
+      min-width: 100%;
+    }
+  }
+
+  .table::-webkit-scrollbar {
+    display: none;
+  }
+
+  //О школе
+  .section-title {
+    font-size: 35px;
+    z-index: 0.999;
+  }
+
+  .section-title::after {
+    bottom: -30px;
+    z-index: 0.999;
+  }
+}
 //адаптив мобайл min
-@media screen and (max-width:574px) {
+@media screen and (max-width:620px) {
   //main
   .main__conteinerflex {
     display: flex;
@@ -757,15 +919,22 @@ align-items: center;
     width: 100%;
     margin: 0 auto;
 }
-.main__h1text {
+  .main__h1text {
     background-size: 60%;
     display: flex;
     flex-direction: column;
+    z-index: -1;
   .main__h1{
       @include font-h111;
       }
       .main__text {
         @include font-18;
       }
-  }}
+      }
+  .main__menu1{
+    @include font-16;
+    align-items: start;
+    padding: 20px 0 20px 20px;
+  }
+}
 

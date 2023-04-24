@@ -36,9 +36,9 @@ $font: 'Noto Sans';
 @mixin font-h111 {
     font-family: 'Noto Sans';
     font-style: normal;
-    line-height: 92px;
+    line-height: 72px;
     font-weight: 800;
-    font-size: 48px;
+    font-size: 45px;
 }
 @mixin font-h12 {
     font-family: 'Noto Sans';
@@ -53,7 +53,6 @@ $font: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
-    line-height: 82px;
     text-transform: uppercase;
 }
 @mixin font-36 {
@@ -96,7 +95,7 @@ $font: 'Noto Sans';
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;}
+    font-size: 16px;}
 
 @mixin payment__font-p {
     font-family: $font;

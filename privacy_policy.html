@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/slylesheet.css" />
     <link rel="shortcut icon" href="assets/images/privacy_policy-image.svg" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/Logologo_head.png"
+      type="image/png"
+    />
     <title>Политика конфиденциальности</title>
   </head>
 
@@ -26,14 +31,44 @@
     <header>
       <div class="container header__conteiner">
         <div>
-          <a class="a__logo" href="https://t.me/ggschule"
-            ><img
+          <img
               src="assets/images/project 2.jpg"
               alt="logo"
               class="logo__icon"
-          /></a>
+          />
         </div>
-        <nav>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li>
+              <a href="https://t.me/ggschule"
+                ><img
+                  src="assets/images/telegram_logo_icon_229299.svg"
+                  alt="talegram"
+                  class="telegram__icon"
+              /></a>
+            </li>
+            <li>
+              <a class="header__a" href="index.html">Вернуться на главную</a>
+            </li>
+            <li><a class="header__a" href="school.html">O школе</a></li>
+            <li><a class="header__a" href="teachers.html">Преподаватели</a></li>
+            <li><a class="header__a" href="schedule.html">Расписание</a></li>
+            <li><a class="header__a" href="payment.html">Стоимость</a></li>
+            <li>
+              <a
+                class="header__a"
+                href="https://airtable.com/shrX9pex2xJDMHp9h"
+                target="_blank"
+                >Запись</a
+              >
+            </li>
+          </ul>
+        </div>
+        <nav class="navigation">
           <ul class="header__ul">
             <li class="header__li">
               <a class="header__a" href="index.html">Вернуться на главную</a>
@@ -54,8 +89,8 @@
             </li>
           </ul>
         </nav>
-        <div>
-          <a href="https://t.me/ggschule" target="_blank"
+        <div class="telegram__icon-box">
+          <a href="https://t.me/ggschule"
             ><img
               src="assets/images/telegram_logo_icon_229299.svg"
               alt="talegram"
@@ -289,7 +324,7 @@
             <a
               class="privacy_policy__a"
               href="public_offer.html"
-              target="_blank"
+              
               >Публичная оферта Günter Grass</a
             >
           </p>
@@ -493,7 +528,7 @@
             <a
               class="privacy_policy__a"
               href="privacy_policy.html"
-              target="_blank"
+              
               >Здесь должен быть адрес странички Политики конфиденциальности</a
             >
           </p>
