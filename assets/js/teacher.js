@@ -24,7 +24,6 @@ function findTeacher() {
 }
 
 function showTeacher(specialization, elem) {
-
     let allSlides = document.getElementsByClassName(`carousel-item-${specialization}`);
 
     Array.from(allSlides).forEach((element) => {
