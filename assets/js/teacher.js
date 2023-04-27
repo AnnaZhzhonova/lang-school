@@ -35,6 +35,8 @@ function showTeacher(specialization, elem) {
         }
     })
 
+
     localStorage.removeItem('targetTeacher');
     target = null;
+
 }

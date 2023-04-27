@@ -14,7 +14,17 @@ let target = null;
 
     specLinks.forEach(element => {
         element.addEventListener('click', (e) => {
-            target = e.originalTarget.outerText;
+
+            if (e.target.textContent) {
+                target = e.target.textContent
+            }
+            else if (e.originalTarget?.outerText) {
+                target = e.originalTarget.outerText;
+            } 
+            else if (e.srcElement.innerText) {
+                target = e.srcElement.innerText
+            }
+
             localStorage.setItem('targetTeacher', target);
         })
     })
