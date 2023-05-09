@@ -1,719 +1,963 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="assets/styles/slylesheet.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/Logologo_head.png"
+      type="image/png"
+    />
+    <title>Наши преподаватели</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles/normalize.css" />
-  <link rel="stylesheet" href="assets/styles/slylesheet.css" />
-  <link rel="shortcut icon" href="assets/images/Logologo_head.png" type="image/png" />
-  <title>Наши преподаватели</title>
-</head>
+  <body>
+    <header>
+      <div class="container header__container header__container--border">
+        <div>
+          <img src="assets/images/Logo.svg" alt="logo" class="logo__icon" />
+        </div>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li>
+              <a href="https://t.me/ggschule"
+                ><img
+                  src="assets/images/telegram_logo_icon_229299.svg"
+                  alt="talegram"
+                  class="telegram__icon"
+              /></a>
+            </li>
+            <li>
+              <a class="header__a" href="index.html">На главную</a>
+            </li>
+            <li><a class="header__a" href="school.html">O школе</a></li>
+            <li><a class="header__a" href="teachers.html">Преподаватели</a></li>
+            <li><a class="header__a" href="schedule.html">Расписание</a></li>
+            <li><a class="header__a" href="payment.html">Стоимость</a></li>
+            <li>
+              <a class="header__a" href="checklist.html"
+                >Перед началом занятий</a
+              >
+            </li>
+            <li>
+              <a
+                class="header__a"
+                href="https://airtable.com/shrX9pex2xJDMHp9h"
+                target="_blank"
+                >Запись</a
+              >
+            </li>
+          </ul>
+        </div>
+        <nav class="navigation">
+          <ul class="header__ul">
+            <li class="header__li">
+              <a class="header__a" href="index.html">На главную</a>
+            </li>
 
-<body>
-  <header>
-    <div class="container header__conteiner header__conteiner--border">
-      <div>
-        <img src="assets/images/Logo.svg" alt="logo" class="logo__icon" />
+            <li class="header__li dropdown">
+              <a
+                class="header__a nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >O школе</a
+              >
+              <ul
+                class="dropdown-menu header__ul--dropdown"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li class="header__li--dropdown">
+                  <a class="header__a dropdown-item" href="school.html"
+                    >Школа</a
+                  >
+                </li>
+                <li class="header__li--dropdown">
+                  <a class="header__a dropdown-item" href="teachers.html"
+                    >Преподаватели</a
+                  >
+                </li>
+                <li class="header__li--dropdown">
+                  <a class="header__a dropdown-item" href="schedule.html"
+                    >Расписание</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="header__li">
+              <a class="header__a" href="payment.html">Стоимость</a>
+            </li>
+            <li class="header__li">
+              <a
+                class="header__a"
+                href="https://airtable.com/shrX9pex2xJDMHp9h"
+                target="_blank"
+                >Запись</a
+              >
+            </li>
+            <li class="header__li">
+              <a class="header__a" href="checklist.html"
+                >Перед началом занятий</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="telegram__icon-box">
+          <a href="https://t.me/ggschule"
+            ><img
+              src="assets/images/telegram_logo_icon_229299.svg"
+              alt="talegram"
+              class="telegram__icon"
+          /></a>
+        </div>
       </div>
-      <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-        <ul class="menu__box">
-          <li>
-            <a href="https://t.me/ggschule"><img src="assets/images/telegram_logo_icon_229299.svg" alt="talegram"
-                class="telegram__icon" /></a>
-          </li>
-          <li>
-            <a class="header__a" href="index.html">На главную</a>
-          </li>
-          <li><a class="header__a" href="school.html">O школе</a></li>
-          <li><a class="header__a" href="teachers.html">Преподаватели</a></li>
-          <li><a class="header__a" href="schedule.html">Расписание</a></li>
-          <li><a class="header__a" href="payment.html">Стоимость</a></li>
-          <li>
-            <a class="header__a" href="checklist.html">Перед началом занятий</a>
-          </li>
-          <li>
-            <a class="header__a" href="https://airtable.com/shrX9pex2xJDMHp9h" target="_blank">Запись</a>
-          </li>
-        </ul>
-      </div>
-      <nav class="navigation">
-        <ul class="header__ul">
-          <li class="header__li">
-            <a class="header__a" href="index.html">На главную</a>
-          </li>
-
-          <li class="header__li dropdown">
-            <a class="header__a nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">O школе</a>
-            <ul class="dropdown-menu header__ul--dropdown" aria-labelledby="navbarDropdownMenuLink">
-              <li class="header__li--dropdown">
-                <a class="header__a dropdown-item" href="school.html">Школа</a>
-              </li>
-              <li class="header__li--dropdown">
-                <a class="header__a dropdown-item" href="teachers.html">Преподаватели</a>
-              </li>
-              <li class="header__li--dropdown">
-                <a class="header__a dropdown-item" href="schedule.html">Расписание</a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="header__li">
-            <a class="header__a" href="payment.html">Стоимость</a>
-          </li>
-          <li class="header__li">
-            <a class="header__a" href="https://airtable.com/shrX9pex2xJDMHp9h" target="_blank">Запись</a>
-          </li>
-          <li class="header__li">
-            <a class="header__a" href="checklist.html">Перед началом занятий</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="telegram__icon-box">
-        <a href="https://t.me/ggschule"><img src="assets/images/telegram_logo_icon_229299.svg" alt="talegram"
-            class="telegram__icon" /></a>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="container">
-      <section class="teachers">
-        <div class="teachers__content">
-          <h2 class="section-title">Наши преподаватели</h2>
-          <div class="teachers-description">
-            <p>
-              Расписание всех преподавателей занятий можно посмотреть
-              <a class="link" href="schedule.html" target="_blank">здесь</a>.
-            </p>
-            <div class="teachers-country" id="germany">
-              <img class="teachers-country__flag" src="./assets/img/Germany_flag.svg" alt="German" />
-              <h5 class="teachers-country__language">Немецкий язык</h5>
-            </div>
-
-            <div class="teachers-box">
-              <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item carousel-item-germany active">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher germany" id="teacher-1"> Алина Долженко</span>
-                        </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href="https://www.facebook.com/alinadolzh" target="_blank"><img
-                              src="./assets/img/fb.svg" alt="FB" /></a>
-                        </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>немецкий и английский</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          О себе: Преподаю немецкий и английский языки с тех
-                          пор как закончила Институт языковой коммуникации
-                          Томского политехнического университета. Училась в
-                          Германии: в 2005 по обмену в университете
-                          Отто-Фридриха Бамберга, в 2009 — в университете
-                          Констанца по стипендии DAAD. Очень хорошо разбираюсь
-                          в носах и запахах в немецкой и русской литературе, я
-                          защитила о них кандидатскую диссертацию. Люблю
-                          преподавать иностранные языки, потому что на уроках
-                          всегда можно обсуждать миллион разных тем и лучше
-                          знакомиться с людьми. Ещё люблю, когда студенты
-                          обнаруживают, что что-то сложное на самом деле
-                          оказывается простым. В этом году получила CELTA —
-                          сертификат для преподавателей английского языка, и
-                          теперь научилась объяснять всё ещё проще.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item carousel-item-germany">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher germany" id="teacher-2"> Александра Березняцкая</span>
-                        </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href=" https://www.facebook.com/alexandra.bereznyatskaya"
-                            target="_blank"><img src="./assets/img/fb.svg" alt="FB" /></a>
-                        </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>немецкий</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          <p>
-                            О себе: Люблю ритм и танец. Убеждена, что изучение
-                            иностранного языка схоже с освоением движенческих
-                            практик — сначала очень страшно и кажется, что ты
-                            бревно, в то время как все лебеди прекрасные. Но
-                            неизбежно наступает прорыв и чувство полета. За
-                            него и люблю изучение и, вместе с ним,
-                            преподавание языков.
-                          </p>
-
-                          <p>Две правды, одна ложь:</p>
-                          <ul>
-                            <li>изучала филологию в Томске и Мангейме;</li>
-                            <li>
-                              участвовала в создании немецкоязычного гида по
-                              Алтаю;
-                            </li>
-                            <li>у меня есть котик.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item carousel-item-germany">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher germany" id="teacher-3"> Зоя Мелихова</span>
-                        </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href=" https://www.facebook.com/zoe.melikhova"
-                            target="_blank"><img src="./assets/img/fb.svg" alt="FB" /></a>
-                        </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>немецкий</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          О себе: Я преподаю немецкий. Я окончила истфак МГУ и
-                          курсы в Гёте институте (С1). В 2019 г. сдала
-                          TestDaF/18 баллов. За время учебы успела
-                          познакомиться с еще несколькими языками помимо
-                          английского и немецкого (китайский, французский,
-                          латынь). Я преподаю взрослым 2 года (из них 1 год в
-                          школе Гюнтера Грасса). Для меня важно, чтобы учебный
-                          процесс был результативным и при этом комфортным и
-                          увлекательным. Я очень люблю немецкую культуру — в
-                          основном, это кино и электронная музыка. В свободное
-                          время я рисую и иногда хожу в походы.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item carousel-item-germany">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher germany" id="teacher-4"> Максим Люзин</span>
-                        </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href="https://vk.com/mr_maxe" target="_blank"><img
-                              src="./assets/img/vk.svg" alt="VK" /></a>
-                        </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>немецкий</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          <p>
-                            О себе: Учил в школе углублённо немецкий, в том
-                            числе у носителя языка, призёр городской олимпиады
-                            по немецкому. Обучался на курсах при
-                            Гёте-институте, в 2015 году сдал экзамен на
-                            международный сертификат по немецкому языку dsdII,
-                            подтверждающий владение на уровне С1. Проходил
-                            языковую практику в компании Volkswagen.
-                          </p>
-                          <p>В школе Г.Г. преподаю почти 5 лет.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item carousel-item-germany">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher germany" id="teacher-5">
-                            Мария Пряничникова</span>
-                        </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href="https://www.facebook.com/mariapriasha.prianichnikova"
-                            target="_blank"><img src="./assets/img/fb.svg" alt="FB" /></a>
-                          <a class="teachers-box__link" href="https://www.instagram.com/pr9sha/" target="_blank"><img
-                              src="./assets/img/instagram1.png" alt="Instagram" /></a>
-                        </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>немецкий</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          О себе: Я бакалавр искусств и магистр дизайна.
-                          Магистратуру я закончила в Германии и именно ради
-                          неё я выучила язык. За несколько лет жизни там я
-                          нежно полюбила немецкий и начала его преподавать.
-                          Для меня язык — это инструмент, который позволяет
-                          чувствовать себя своим в другой стране или с людьми
-                          из другой культуры. Это потрясающее чувство и моя
-                          цель, как преподавателя — помочь его обрести.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Следующий</span>
-                </button>
+    </header>
+    <main>
+      <div class="container">
+        <section class="teachers">
+          <div class="teachers__content">
+            <h2 class="section-title">Наши преподаватели</h2>
+            <div class="teachers-description">
+              <p>
+                Расписание всех преподавателей занятий можно посмотреть
+                <a class="link" href="schedule.html" target="_blank">здесь</a>.
+              </p>
+              <div class="teachers-country" id="germany">
+                <img
+                  class="teachers-country__flag"
+                  src="./assets/img/Germany_flag.svg"
+                  alt="German"
+                />
+                <h5 class="teachers-country__language">Немецкий язык</h5>
               </div>
-            </div>
-            <div class="teachers-country" id="england">
-              <img class="teachers-country__flag" src="./assets/img/GB_flag.svg" alt="English" />
-              <h5 class="teachers-country__language">Английский язык</h5>
-            </div>
-            <div class="teachers-box">
-              <div id="carouselControls_1" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item carousel-item-england active">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher england" id="teacher-6">Митя Гаврилов</span>
+
+              <div class="teachers-box">
+                <div
+                  id="carouselControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-germany active">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher germany" id="teacher-1">
+                              Алина Долженко</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href="https://www.facebook.com/alinadolzh"
+                              target="_blank"
+                              ><img src="./assets/img/fb.svg" alt="FB"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>немецкий и английский</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            О себе: Преподаю немецкий и английский языки с тех
+                            пор как закончила Институт языковой коммуникации
+                            Томского политехнического университета. Училась в
+                            Германии: в 2005 по обмену в университете
+                            Отто-Фридриха Бамберга, в 2009 — в университете
+                            Констанца по стипендии DAAD. Очень хорошо разбираюсь
+                            в носах и запахах в немецкой и русской литературе, я
+                            защитила о них кандидатскую диссертацию. Люблю
+                            преподавать иностранные языки, потому что на уроках
+                            всегда можно обсуждать миллион разных тем и лучше
+                            знакомиться с людьми. Ещё люблю, когда студенты
+                            обнаруживают, что что-то сложное на самом деле
+                            оказывается простым. В этом году получила CELTA —
+                            сертификат для преподавателей английского языка, и
+                            теперь научилась объяснять всё ещё проще.
+                          </div>
                         </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href="https://www.facebook.com/lesoruble" target="_blank"><img
-                              src="./assets/img/fb.svg" alt="FB" /></a>
-                          <a class="teachers-box__link" href="https://vk.com/lesoruble" target="_blank"><img
-                              src="./assets/img/vk.svg" alt="VK" /></a>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item-germany">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher germany" id="teacher-2">
+                              Александра Березняцкая</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href=" https://www.facebook.com/alexandra.bereznyatskaya"
+                              target="_blank"
+                              ><img src="./assets/img/fb.svg" alt="FB"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>немецкий</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            <p>
+                              О себе: Люблю ритм и танец. Убеждена, что изучение
+                              иностранного языка схоже с освоением движенческих
+                              практик — сначала очень страшно и кажется, что ты
+                              бревно, в то время как все лебеди прекрасные. Но
+                              неизбежно наступает прорыв и чувство полета. За
+                              него и люблю изучение и, вместе с ним,
+                              преподавание языков.
+                            </p>
+
+                            <p>Две правды, одна ложь:</p>
+                            <ul>
+                              <li>изучала филологию в Томске и Мангейме;</li>
+                              <li>
+                                участвовала в создании немецкоязычного гида по
+                                Алтаю;
+                              </li>
+                              <li>у меня есть котик.</li>
+                            </ul>
+                          </div>
                         </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>немецкий</span> и
-                          <span> английский</span>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item-germany">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher germany" id="teacher-3">
+                              Зоя Мелихова</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href=" https://www.facebook.com/zoe.melikhova"
+                              target="_blank"
+                              ><img src="./assets/img/fb.svg" alt="FB"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>немецкий</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            О себе: Я преподаю немецкий. Я окончила истфак МГУ и
+                            курсы в Гёте институте (С1). В 2019 г. сдала
+                            TestDaF/18 баллов. За время учебы успела
+                            познакомиться с еще несколькими языками помимо
+                            английского и немецкого (китайский, французский,
+                            латынь). Я преподаю взрослым 2 года (из них 1 год в
+                            школе Гюнтера Грасса). Для меня важно, чтобы учебный
+                            процесс был результативным и при этом комфортным и
+                            увлекательным. Я очень люблю немецкую культуру — в
+                            основном, это кино и электронная музыка. В свободное
+                            время я рисую и иногда хожу в походы.
+                          </div>
                         </div>
-                        <div class="teachers-box__info">
-                          <p>
-                            О себе: Я учу языки уже больше 10 лет. Моя
-                            основная пара языков после иняза —
-                            японский/английский. Немецкий язык я учу последние
-                            6 или 7 лет без перерыва, имею сертификаты TestDAF
-                            и Goethe C2. Миллион раз был в Германии, был там в
-                            14 или 15 городах, также планирую в ближайшем
-                            будущем посетить оставшиеся регионы Германии, в
-                            которых я еще не был.
-                          </p>
-                          <p>
-                            Естественным образом получилось так, что сейчас я
-                            преподаю в основном только английский. В 2019 году
-                            я получил кембриджский сертификат CELTA. На уроках
-                            я люблю экспериментировать и обсуждать актуальные
-                            проблемы, при этом внимательно отношусь к точности
-                            речи.
-                          </p>
-                          <p>
-                            Люблю кататься на велосипеде и исследовать малые
-                            города России и мира.
-                          </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item-germany">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher germany" id="teacher-4">
+                              Максим Люзин</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href="https://vk.com/mr_maxe"
+                              target="_blank"
+                              ><img src="./assets/img/vk.svg" alt="VK"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>немецкий</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            <p>
+                              О себе: Учил в школе углублённо немецкий, в том
+                              числе у носителя языка, призёр городской олимпиады
+                              по немецкому. Обучался на курсах при
+                              Гёте-институте, в 2015 году сдал экзамен на
+                              международный сертификат по немецкому языку dsdII,
+                              подтверждающий владение на уровне С1. Проходил
+                              языковую практику в компании Volkswagen.
+                            </p>
+                            <p>В школе Г.Г. преподаю почти 5 лет.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item-germany">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher germany" id="teacher-5">
+                              Мария Пряничникова</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href="https://www.facebook.com/mariapriasha.prianichnikova"
+                              target="_blank"
+                              ><img src="./assets/img/fb.svg" alt="FB"
+                            /></a>
+                            <a
+                              class="teachers-box__link"
+                              href="https://www.instagram.com/pr9sha/"
+                              target="_blank"
+                              ><img
+                                src="./assets/img/instagram1.png"
+                                alt="Instagram"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>немецкий</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            О себе: Я бакалавр искусств и магистр дизайна.
+                            Магистратуру я закончила в Германии и именно ради
+                            неё я выучила язык. За несколько лет жизни там я
+                            нежно полюбила немецкий и начала его преподавать.
+                            Для меня язык — это инструмент, который позволяет
+                            чувствовать себя своим в другой стране или с людьми
+                            из другой культуры. Это потрясающее чувство и моя
+                            цель, как преподавателя — помочь его обрести.
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item carousel-item-england">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher england" id="teacher-7">Лиза Вороная</span>
-                        </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href="https://www.facebook.com/elizaveta.voronaya"
-                            target="_blank"><img src="./assets/img/fb.svg" alt="FB" /></a>
-                          <a class="teachers-box__link" href="https://vk.com/id125621439" target="_blank"><img
-                              src="./assets/img/vk.svg" alt="VK" /></a>
-                        </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>английский</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          О себе: В университете я изучала английский язык и
-                          методику его преподавания. Кроме того, год
-                          путешествовала и работала в Лондоне, Лос-Анджелесе и
-                          Нью-Йорке. Я уже 5 лет преподаю английский детям как
-                          индивидуально, так и в группах, и сейчас мне очень
-                          интересно поработать со взрослыми.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item carousel-item-england">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher england" id="teacher-8"> Анатолий Долженко</span>
-                        </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href="https://www.facebook.com/anatoly.nedogonish"
-                            target="_blank"><img src="./assets/img/fb.svg" alt="FB" /></a>
-                          <a class="teachers-box__link" href="https://www.instagram.com/a.nedogonish/"
-                            target="_blank"><img src="./assets/img/instagram1.png" alt="Instagram" /></a>
-                        </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>английский</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          <p>
-                            О себе: Я получил специальность переводчика
-                            английского языка на факультете иностранных языков
-                            Томского государственного университета. Кроме
-                            английского я говорю по-немецки и знаю ещё
-                            несколько языков на базовом уровне (польский,
-                            татарский, испанский, голландский, португальский).
-                            Мне нравятся языки, потому что каждый из них даёт
-                            доступ к пласту культуры, который иначе остаётся
-                            почти недоступным.
-                          </p>
-                          <p>
-                            Я умею очень доступно объяснять даже сложные вещи
-                            и хорошо чувствую потребности учеников. Сейчас я
-                            прохожу курс для преподавателей английского, после
-                            которого получу сертификат TESOL (преподавание
-                            английского носителям других языков).
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item carousel-item-england">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher england" id="teacher-9">Лиза Новикова</span>
-                        </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href="https://www.facebook.com/izlis/" target="_blank"><img
-                              src="./assets/img/fb.svg" alt="FB" /></a>
-                          <a class="teachers-box__link" href="https://vk.com/izlis" target="_blank"><img
-                              src="./assets/img/vk.svg" alt="VK" /></a>
-                          <a class="teachers-box__link" href="  https://www.instagram.com/izlis.film/"
-                            target="_blank"><img src="./assets/img/instagram1.png" alt="Instagram" /></a>
-                        </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>английский</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          <p>
-                            О себе: Преподаю английский с 2010 года, после
-                            того, как вернулась из Америки, где жила в
-                            американской семье и училась год в частной
-                            американской школе. Начала преподавательскую
-                            деятельность с частных уроков детям дошкольного и
-                            школьного возраста, у которых были трудности с
-                            предметом, помогала его полюбить и начинать
-                            разбираться.
-                          </p>
-                          <p>
-                            Закончила МПГУ факультет иностранных языков, а
-                            также имею диплом преподавателя РКИ. На данный
-                            момент преподаю английский в государственной школе
-                            (с 2017 года). За весь опыт работы поняла для
-                            себя, что нравится работать в группах. Сейчас хочу
-                            попробовать позаниматься английским со взрослыми.
-                            Увлекаюсь искусством и виниловыми пластинками. В
-                            свободное время фотографирую на плёнку.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item carousel-item-england">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher england" id="teacher-10"> Мария Кузнецова</span>
-                        </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href="https://www.facebook.com/marie.happy18"
-                            target="_blank"><img src="./assets/img/fb.svg" alt="FB" /></a>
-                        </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>английский</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          <p>
-                            О себе: Я лингвист по образованию
-                            (английский/французский), преподаю английский
-                            взрослым более 5 лет. В октябре прошлого года
-                            получила CELTA в Барселоне, в школьные и
-                            студенческие времена ездила на обучение (языковые
-                            курсы) в Брайтон.
-                          </p>
-                          <p>
-                            Иностранный язык для меня не только средство
-                            коммуникации, что несомненно очень важно, но и
-                            проводник в другую культуру, возможность познавать
-                            мир с различных сторон. Основные задачи в
-                            преподавании, которые я ставлю перед собой —
-                            научить свободно выражать свои мысли на
-                            иностранном языке, не бояться делать ошибки и
-                            получать удовольствие, работая с языком в
-                            различных ситуациях.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item carousel-item-england">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher england" id="teacher-11"> Sam Gottlieb</span>
-                        </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href="https://t.me/sam_g123" target="_blank"><img
-                              src="./assets/img/telegram.svg" alt="Telegram" /></a>
-                        </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>английский</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          О себе: Я родился в Австралии, вырос в Сиднее и 5
-                          лет назад поехал в Германию учиться компьютерной
-                          лингвистике (у меня также есть сертификат TEFL).
-                          После учёбы я переехал в Грузию, где живу уже год и
-                          работаю преподавателем английского. В свободное
-                          время я занимаюсь спортом, хожу в горы и изучаю
-                          языки. Кроме английского, я говорю по-немецки,
-                          по-французски, по-норвежски и продолжаю учить
-                          русский. Для меня главное в изучении языков — это
-                          общение с людьми (хотя мне нравится и грамматика), а
-                          сам процесс изучения должен быть интересным и
-                          приятным.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item carousel-item-england">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher england" id="teacher-12"> Андрей Краснояров</span>
-                        </div>
-                        <div class="teachers-box__social-net"></div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>английский</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          О себе: Я преподаю английский уже шесть лет. Я начал
-                          преподавать вместе с началом учебы в бакалавриате,
-                          где я изучал международные отношения. В магистратуре
-                          я переключился на лингвистику и решил сделать теорию
-                          и методику преподавания иностранных языков своим
-                          вторым фокусом. Со старта своей преподавательской
-                          деятельности я многому научился и мой подход к
-                          преподаванию заметно поменялся. Я стараюсь делать
-                          занятия наполненными не только знаниями о языке, но
-                          и смежным опытом, который может быть релевантным. А
-                          еще я показываю всем своим студентам, что в
-                          английском языке нет ничего непосильного и даже
-                          самые насыщенные деталями грамматические темы
-                          складываются в понятные системы.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls_1"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls_1"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Следующий</span>
-                </button>
               </div>
-            </div>
-            <div class="teachers-country" id="spain">
-              <img class="teachers-country__flag" src="./assets/img/Spain-flag.svg" alt="Spanish" />
-              <h5 class="teachers-country__language">Испанский язык</h5>
-            </div>
-            <div class="teachers-box">
-              <div id="carouselControls_2" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item carousel-item-spain active">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher spain" id="teacher-13">Роман Пономарев</span>
+              <div class="teachers-country" id="england">
+                <img
+                  class="teachers-country__flag"
+                  src="./assets/img/GB_flag.svg"
+                  alt="English"
+                />
+                <h5 class="teachers-country__language">Английский язык</h5>
+              </div>
+              <div class="teachers-box">
+                <div
+                  id="carouselControls_1"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-england active">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher england" id="teacher-6"
+                              >Митя Гаврилов</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href="https://www.facebook.com/lesoruble"
+                              target="_blank"
+                              ><img src="./assets/img/fb.svg" alt="FB"
+                            /></a>
+                            <a
+                              class="teachers-box__link"
+                              href="https://vk.com/lesoruble"
+                              target="_blank"
+                              ><img src="./assets/img/vk.svg" alt="VK"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>немецкий</span> и
+                            <span> английский</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            <p>
+                              О себе: Я учу языки уже больше 10 лет. Моя
+                              основная пара языков после иняза —
+                              японский/английский. Немецкий язык я учу последние
+                              6 или 7 лет без перерыва, имею сертификаты TestDAF
+                              и Goethe C2. Миллион раз был в Германии, был там в
+                              14 или 15 городах, также планирую в ближайшем
+                              будущем посетить оставшиеся регионы Германии, в
+                              которых я еще не был.
+                            </p>
+                            <p>
+                              Естественным образом получилось так, что сейчас я
+                              преподаю в основном только английский. В 2019 году
+                              я получил кембриджский сертификат CELTA. На уроках
+                              я люблю экспериментировать и обсуждать актуальные
+                              проблемы, при этом внимательно отношусь к точности
+                              речи.
+                            </p>
+                            <p>
+                              Люблю кататься на велосипеде и исследовать малые
+                              города России и мира.
+                            </p>
+                          </div>
                         </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href="https://www.facebook.com/captainxgalaxy"
-                            target="_blank"><img src="./assets/img/fb.svg" alt="FB" /></a>
-                          <a class="teachers-box__link" href="https://vk.com/captain_galaxy" target="_blank"><img
-                              src="./assets/img/vk.svg" alt="VK" /></a>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item-england">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher england" id="teacher-7"
+                              >Лиза Вороная</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href="https://www.facebook.com/elizaveta.voronaya"
+                              target="_blank"
+                              ><img src="./assets/img/fb.svg" alt="FB"
+                            /></a>
+                            <a
+                              class="teachers-box__link"
+                              href="https://vk.com/id125621439"
+                              target="_blank"
+                              ><img src="./assets/img/vk.svg" alt="VK"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>английский</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            О себе: В университете я изучала английский язык и
+                            методику его преподавания. Кроме того, год
+                            путешествовала и работала в Лондоне, Лос-Анджелесе и
+                            Нью-Йорке. Я уже 5 лет преподаю английский детям как
+                            индивидуально, так и в группах, и сейчас мне очень
+                            интересно поработать со взрослыми.
+                          </div>
                         </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>испанский</span>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item-england">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher england" id="teacher-8">
+                              Анатолий Долженко</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href="https://www.facebook.com/anatoly.nedogonish"
+                              target="_blank"
+                              ><img src="./assets/img/fb.svg" alt="FB"
+                            /></a>
+                            <a
+                              class="teachers-box__link"
+                              href="https://www.instagram.com/a.nedogonish/"
+                              target="_blank"
+                              ><img
+                                src="./assets/img/instagram1.png"
+                                alt="Instagram"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>английский</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            <p>
+                              О себе: Я получил специальность переводчика
+                              английского языка на факультете иностранных языков
+                              Томского государственного университета. Кроме
+                              английского я говорю по-немецки и знаю ещё
+                              несколько языков на базовом уровне (польский,
+                              татарский, испанский, голландский, португальский).
+                              Мне нравятся языки, потому что каждый из них даёт
+                              доступ к пласту культуры, который иначе остаётся
+                              почти недоступным.
+                            </p>
+                            <p>
+                              Я умею очень доступно объяснять даже сложные вещи
+                              и хорошо чувствую потребности учеников. Сейчас я
+                              прохожу курс для преподавателей английского, после
+                              которого получу сертификат TESOL (преподавание
+                              английского носителям других языков).
+                            </p>
+                          </div>
                         </div>
-                        <div class="teachers-box__info">
-                          <p>
-                            О себе: Испанским языком занимаюсь 19 лет, сейчас
-                            живу в Барселоне. Фанат испаноязычного мира,
-                            обожаю коллекционировать культурные артефакты
-                            (музыка, книжки) на испанском языке, хорошо
-                            разбираюсь в политической и социальной ситуации в
-                            Испании. По Испании путешествовал много раз, три
-                            месяца учился в Барселоне, работал переводчиком на
-                            кинофестивале в Аликанте. В 2019 году за месяц
-                            проехал с рюкзаком Аргентину, Боливию и Перу. В
-                            планах побывать во всех испаноязычных странах.
-                            Диплом DELE C1. Преподаю 7 лет. Самые топовые
-                            штуки, что я делал с 2015 года:
-                          </p>
-                          <ul>
-                            <li>
-                              Семь часов переводил для российских журналистов
-                              испанского писателя Артуро Переса-Реверте.
-                            </li>
-                            <li>
-                              Работал на ЧМ-2018 фиксером для
-                              уругвайско-аргентинской группы журналистов
-                              телеканала ESPN.
-                            </li>
-                            <li>
-                              Работал переводчиком на кинофестивале "Volna" в
-                              Аликанте, сопровождал организаторов.
-                            </li>
-                            <li>
-                              Проводил обзорные экскурсии по центру города для
-                              испаноязычных туристов, сопровождал их в
-                              поездках и переводил для них русскоговорящих
-                              гидов.
-                            </li>
-                            <li>
-                              Работал переводчиком на фестивале "Спасская
-                              башня", сопровождал мексиканского генерала и его
-                              супругу на официальных мероприятиях.
-                            </li>
-                          </ul>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item-england">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher england" id="teacher-9"
+                              >Лиза Новикова</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href="https://www.facebook.com/izlis/"
+                              target="_blank"
+                              ><img src="./assets/img/fb.svg" alt="FB"
+                            /></a>
+                            <a
+                              class="teachers-box__link"
+                              href="https://vk.com/izlis"
+                              target="_blank"
+                              ><img src="./assets/img/vk.svg" alt="VK"
+                            /></a>
+                            <a
+                              class="teachers-box__link"
+                              href="  https://www.instagram.com/izlis.film/"
+                              target="_blank"
+                              ><img
+                                src="./assets/img/instagram1.png"
+                                alt="Instagram"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>английский</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            <p>
+                              О себе: Преподаю английский с 2010 года, после
+                              того, как вернулась из Америки, где жила в
+                              американской семье и училась год в частной
+                              американской школе. Начала преподавательскую
+                              деятельность с частных уроков детям дошкольного и
+                              школьного возраста, у которых были трудности с
+                              предметом, помогала его полюбить и начинать
+                              разбираться.
+                            </p>
+                            <p>
+                              Закончила МПГУ факультет иностранных языков, а
+                              также имею диплом преподавателя РКИ. На данный
+                              момент преподаю английский в государственной школе
+                              (с 2017 года). За весь опыт работы поняла для
+                              себя, что нравится работать в группах. Сейчас хочу
+                              попробовать позаниматься английским со взрослыми.
+                              Увлекаюсь искусством и виниловыми пластинками. В
+                              свободное время фотографирую на плёнку.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item-england">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher england" id="teacher-10">
+                              Мария Кузнецова</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href="https://www.facebook.com/marie.happy18"
+                              target="_blank"
+                              ><img src="./assets/img/fb.svg" alt="FB"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>английский</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            <p>
+                              О себе: Я лингвист по образованию
+                              (английский/французский), преподаю английский
+                              взрослым более 5 лет. В октябре прошлого года
+                              получила CELTA в Барселоне, в школьные и
+                              студенческие времена ездила на обучение (языковые
+                              курсы) в Брайтон.
+                            </p>
+                            <p>
+                              Иностранный язык для меня не только средство
+                              коммуникации, что несомненно очень важно, но и
+                              проводник в другую культуру, возможность познавать
+                              мир с различных сторон. Основные задачи в
+                              преподавании, которые я ставлю перед собой —
+                              научить свободно выражать свои мысли на
+                              иностранном языке, не бояться делать ошибки и
+                              получать удовольствие, работая с языком в
+                              различных ситуациях.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item-england">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher england" id="teacher-11">
+                              Sam Gottlieb</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href="https://t.me/sam_g123"
+                              target="_blank"
+                              ><img
+                                src="./assets/img/telegram.svg"
+                                alt="Telegram"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>английский</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            О себе: Я родился в Австралии, вырос в Сиднее и 5
+                            лет назад поехал в Германию учиться компьютерной
+                            лингвистике (у меня также есть сертификат TEFL).
+                            После учёбы я переехал в Грузию, где живу уже год и
+                            работаю преподавателем английского. В свободное
+                            время я занимаюсь спортом, хожу в горы и изучаю
+                            языки. Кроме английского, я говорю по-немецки,
+                            по-французски, по-норвежски и продолжаю учить
+                            русский. Для меня главное в изучении языков — это
+                            общение с людьми (хотя мне нравится и грамматика), а
+                            сам процесс изучения должен быть интересным и
+                            приятным.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item-england">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher england" id="teacher-12">
+                              Андрей Краснояров</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net"></div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>английский</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            О себе: Я преподаю английский уже шесть лет. Я начал
+                            преподавать вместе с началом учебы в бакалавриате,
+                            где я изучал международные отношения. В магистратуре
+                            я переключился на лингвистику и решил сделать теорию
+                            и методику преподавания иностранных языков своим
+                            вторым фокусом. Со старта своей преподавательской
+                            деятельности я многому научился и мой подход к
+                            преподаванию заметно поменялся. Я стараюсь делать
+                            занятия наполненными не только знаниями о языке, но
+                            и смежным опытом, который может быть релевантным. А
+                            еще я показываю всем своим студентам, что в
+                            английском языке нет ничего непосильного и даже
+                            самые насыщенные деталями грамматические темы
+                            складываются в понятные системы.
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item carousel-item-spain">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher spain" id="teacher-14">Катерина Телегина</span>
-                        </div>
-                        <div class="teachers-box__social-net"></div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>испанский</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          О себе: У меня историческое образование, но вот уже
-                          8 лет я изучаю испанский язык. Закончила годовой
-                          курс испанского в языковой школе в Барселоне, после
-                          чего начала занятия с первыми студентами. За свою
-                          жизнь успела три года руководить галереей в Москве,
-                          провести сотню экскурсий и даже преподавать танцы
-                          четырёхлеткам —поэтому умею объяснять самые сложные
-                          вещи самым простым языком.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselControls_1"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselControls_1"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls_2"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls_2"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Следующий</span>
-                </button>
               </div>
-            </div>
-            <div class="teachers-country" id="france">
-              <img class="teachers-country__flag" src="./assets/img/France_flag.svg" alt="French" />
-              <h5 class="teachers-country__language">Французский язык</h5>
-            </div>
-            <div class="teachers-box">
-              <div id="carouselControls_3" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item carousel-item-france active">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher france" id="teacher-15">Ксения Воинова</span>
+              <div class="teachers-country" id="spain">
+                <img
+                  class="teachers-country__flag"
+                  src="./assets/img/Spain-flag.svg"
+                  alt="Spanish"
+                />
+                <h5 class="teachers-country__language">Испанский язык</h5>
+              </div>
+              <div class="teachers-box">
+                <div
+                  id="carouselControls_2"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-spain active">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher spain" id="teacher-13"
+                              >Роман Пономарев</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href="https://www.facebook.com/captainxgalaxy"
+                              target="_blank"
+                              ><img src="./assets/img/fb.svg" alt="FB"
+                            /></a>
+                            <a
+                              class="teachers-box__link"
+                              href="https://vk.com/captain_galaxy"
+                              target="_blank"
+                              ><img src="./assets/img/vk.svg" alt="VK"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>испанский</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            <p>
+                              О себе: Испанским языком занимаюсь 19 лет, сейчас
+                              живу в Барселоне. Фанат испаноязычного мира,
+                              обожаю коллекционировать культурные артефакты
+                              (музыка, книжки) на испанском языке, хорошо
+                              разбираюсь в политической и социальной ситуации в
+                              Испании. По Испании путешествовал много раз, три
+                              месяца учился в Барселоне, работал переводчиком на
+                              кинофестивале в Аликанте. В 2019 году за месяц
+                              проехал с рюкзаком Аргентину, Боливию и Перу. В
+                              планах побывать во всех испаноязычных странах.
+                              Диплом DELE C1. Преподаю 7 лет. Самые топовые
+                              штуки, что я делал с 2015 года:
+                            </p>
+                            <ul>
+                              <li>
+                                Семь часов переводил для российских журналистов
+                                испанского писателя Артуро Переса-Реверте.
+                              </li>
+                              <li>
+                                Работал на ЧМ-2018 фиксером для
+                                уругвайско-аргентинской группы журналистов
+                                телеканала ESPN.
+                              </li>
+                              <li>
+                                Работал переводчиком на кинофестивале "Volna" в
+                                Аликанте, сопровождал организаторов.
+                              </li>
+                              <li>
+                                Проводил обзорные экскурсии по центру города для
+                                испаноязычных туристов, сопровождал их в
+                                поездках и переводил для них русскоговорящих
+                                гидов.
+                              </li>
+                              <li>
+                                Работал переводчиком на фестивале "Спасская
+                                башня", сопровождал мексиканского генерала и его
+                                супругу на официальных мероприятиях.
+                              </li>
+                            </ul>
+                          </div>
                         </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href="https://www.facebook.com/asperrata" target="_blank"><img
-                              src="./assets/img/fb.svg" alt="FB" /></a>
-                          <a class="teachers-box__link" href=" https://www.instagram.com/asperrata" target="_blank"><img
-                              src="./assets/img/instagram1.png" alt="instagram" /></a>
-                        </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>французский</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          <p>О себе: Я изучаю языки сколько себя помню.</p>
-                          <p>
-                            Мама до 6 лет росла в Африке с франкоязычными
-                            детьми и впервые увидела снег, когда пошла в
-                            первый класс в Москве (и это времена СССР).
-                          </p>
-                          <p>
-                            Меня всегда радовало, когда франкоязычные люди
-                            принимали маму за носителя, и мы до сих пор играем
-                            с ней в свою маленькую игру, переходя на
-                            французский, когда нам захочется.
-                          </p>
-                          <p>
-                            Мне повезло с такой мамой — для меня французский
-                            был на фоне с раннего детства. Я учила его не
-                            академически - я учила его за счет погружения. В
-                            10-15 лет я почти каждое лето ездила в город По
-                            (Гасконь, в предместьях Пиреней) к друзьям
-                            родителей, проводила там целое лето, проживала за
-                            лето маленькую жизнь и в конце августа
-                            возвращалась в Москву, думая по-французски.
-                          </p>
-                          <p>
-                            Я учила французский и академически, в гимназии
-                            1504(с 5го по 7ой) и в Лицее 1535 (с 8го по 11
-                            классы), а позже сдавала его экстерном уже в МГУ,
-                            в Институте стран Азии и Африки. В Лицее это было
-                            даже инновационно, у нас был театр на французском,
-                            где ставили Мольера в оригинале. В МГУ — мы читали
-                            Маленького Принца и романы Ромена Гари.
-                          </p>
-                          <p>
-                            Закончив Институт стран Азии и Африки МГУ, я стала
-                            также специалистом по китайскому языку и Китаю.
-                            При этом я не оставляла и французский, общаясь со
-                            своими друзьями, мамой, заводя в Китае новых
-                            друзей из Канады, с Таити, Мадагаскара и прочих
-                            франкоязычных мест, смотря фильмы в оригинале,
-                            читая книги, а также продолжая преподавать его. Я
-                            иногда заменяла маму в качестве гида с французским
-                            языком в Москве, переводила на выставках,
-                            дегустациях и прочих мероприятиях. Французский -
-                            одна из частей моей жизни, и у меня не проходит ни
-                            дня без него, в том или ином количестве.
-                          </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item-spain">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher spain" id="teacher-14"
+                              >Катерина Телегина</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net"></div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>испанский</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            О себе: У меня историческое образование, но вот уже
+                            8 лет я изучаю испанский язык. Закончила годовой
+                            курс испанского в языковой школе в Барселоне, после
+                            чего начала занятия с первыми студентами. За свою
+                            жизнь успела три года руководить галереей в Москве,
+                            провести сотню экскурсий и даже преподавать танцы
+                            четырёхлеткам —поэтому умею объяснять самые сложные
+                            вещи самым простым языком.
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- <div class="carousel-item carousel-item-france">
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselControls_2"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselControls_2"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                </div>
+              </div>
+              <div class="teachers-country" id="france">
+                <img
+                  class="teachers-country__flag"
+                  src="./assets/img/France_flag.svg"
+                  alt="French"
+                />
+                <h5 class="teachers-country__language">Французский язык</h5>
+              </div>
+              <div class="teachers-box">
+                <div
+                  id="carouselControls_3"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-france active">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher france" id="teacher-15"
+                              >Ксения Воинова</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href="https://www.facebook.com/asperrata"
+                              target="_blank"
+                              ><img src="./assets/img/fb.svg" alt="FB"
+                            /></a>
+                            <a
+                              class="teachers-box__link"
+                              href=" https://www.instagram.com/asperrata"
+                              target="_blank"
+                              ><img
+                                src="./assets/img/instagram1.png"
+                                alt="instagram"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>французский</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            <p>О себе: Я изучаю языки сколько себя помню.</p>
+                            <p>
+                              Мама до 6 лет росла в Африке с франкоязычными
+                              детьми и впервые увидела снег, когда пошла в
+                              первый класс в Москве (и это времена СССР).
+                            </p>
+                            <p>
+                              Меня всегда радовало, когда франкоязычные люди
+                              принимали маму за носителя, и мы до сих пор играем
+                              с ней в свою маленькую игру, переходя на
+                              французский, когда нам захочется.
+                            </p>
+                            <p>
+                              Мне повезло с такой мамой — для меня французский
+                              был на фоне с раннего детства. Я учила его не
+                              академически - я учила его за счет погружения. В
+                              10-15 лет я почти каждое лето ездила в город По
+                              (Гасконь, в предместьях Пиреней) к друзьям
+                              родителей, проводила там целое лето, проживала за
+                              лето маленькую жизнь и в конце августа
+                              возвращалась в Москву, думая по-французски.
+                            </p>
+                            <p>
+                              Я учила французский и академически, в гимназии
+                              1504(с 5го по 7ой) и в Лицее 1535 (с 8го по 11
+                              классы), а позже сдавала его экстерном уже в МГУ,
+                              в Институте стран Азии и Африки. В Лицее это было
+                              даже инновационно, у нас был театр на французском,
+                              где ставили Мольера в оригинале. В МГУ — мы читали
+                              Маленького Принца и романы Ромена Гари.
+                            </p>
+                            <p>
+                              Закончив Институт стран Азии и Африки МГУ, я стала
+                              также специалистом по китайскому языку и Китаю.
+                              При этом я не оставляла и французский, общаясь со
+                              своими друзьями, мамой, заводя в Китае новых
+                              друзей из Канады, с Таити, Мадагаскара и прочих
+                              франкоязычных мест, смотря фильмы в оригинале,
+                              читая книги, а также продолжая преподавать его. Я
+                              иногда заменяла маму в качестве гида с французским
+                              языком в Москве, переводила на выставках,
+                              дегустациях и прочих мероприятиях. Французский -
+                              одна из частей моей жизни, и у меня не проходит ни
+                              дня без него, в том или ином количестве.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="carousel-item carousel-item-france">
                     <div class="d-block w-100">
                       <div class="teachers-box_inner">
                         <div class="teachers-box__name">
@@ -752,173 +996,263 @@
                 </div>
               </div>
             </div>-->
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselControls_3"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselControls_3"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls_3"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls_3"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Следующий</span>
-                </button>
               </div>
-            </div>
-            <div class="teachers-country" id="japan">
-              <img class="teachers-country__flag" src="./assets/img/Japan_flag.svg" alt="Japanese" />
-              <h5 class="teachers-country__language">Японский язык</h5>
-            </div>
+              <div class="teachers-country" id="japan">
+                <img
+                  class="teachers-country__flag"
+                  src="./assets/img/Japan_flag.svg"
+                  alt="Japanese"
+                />
+                <h5 class="teachers-country__language">Японский язык</h5>
+              </div>
 
-            <div class="teachers-box">
-              <div id="carouselControls_4" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item carousel-item-japan active">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher japan" id="teacher-17"> Линь Ву</span>
-                        </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href="https://vk.com/sleepy_penguin" target="_blank"><img
-                              src="./assets/img/vk.svg" alt="VK" /></a>
-                          <a class="teachers-box__link" href=" https://www.instagram.com/linhvu7226"
-                            target="_blank"><img src="./assets/img/instagram1.png" alt="instagram" /></a>
-                        </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>японский</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          <p>
-                            О себе: По первому образованию я регионовед, по
-                            второму (магистратура) — преподаватель. Я учу
-                            английский уже почти пятнадцать лет, со школы и до
-                            сих пор, а японский — уже почти шесть. Я преподаю
-                            эти языки уже три года.
-                          </p>
-                          <p>
-                            Японский язык для меня не только язык аниме и
-                            манги (пусть и всё началось для меня с них), но и
-                            возможность погрузиться в культуру и обычаи этой
-                            страны, даже если какие-то аспекты в них
-                            непривычны или не могут быть приняты до конца.
-                          </p>
-                          <p>
-                            Самое важное для меня в преподавании — научить
-                            студентов говорить и думать на изучаемом языке, а
-                            не просто заставлять переводить непонятные тексты
-                            и предложения. Я побывал на обоих сторонах
-                            обучения — и как преподавтель, и как студент,
-                            поэтому я понимаю, каково студентам, особенно
-                            изучающим новый язык с нуля.
-                          </p>
+              <div class="teachers-box">
+                <div
+                  id="carouselControls_4"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-japan active">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher japan" id="teacher-17">
+                              Линь Ву</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href="https://vk.com/sleepy_penguin"
+                              target="_blank"
+                              ><img src="./assets/img/vk.svg" alt="VK"
+                            /></a>
+                            <a
+                              class="teachers-box__link"
+                              href=" https://www.instagram.com/linhvu7226"
+                              target="_blank"
+                              ><img
+                                src="./assets/img/instagram1.png"
+                                alt="instagram"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>японский</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            <p>
+                              О себе: По первому образованию я регионовед, по
+                              второму (магистратура) — преподаватель. Я учу
+                              английский уже почти пятнадцать лет, со школы и до
+                              сих пор, а японский — уже почти шесть. Я преподаю
+                              эти языки уже три года.
+                            </p>
+                            <p>
+                              Японский язык для меня не только язык аниме и
+                              манги (пусть и всё началось для меня с них), но и
+                              возможность погрузиться в культуру и обычаи этой
+                              страны, даже если какие-то аспекты в них
+                              непривычны или не могут быть приняты до конца.
+                            </p>
+                            <p>
+                              Самое важное для меня в преподавании — научить
+                              студентов говорить и думать на изучаемом языке, а
+                              не просто заставлять переводить непонятные тексты
+                              и предложения. Я побывал на обоих сторонах
+                              обучения — и как преподавтель, и как студент,
+                              поэтому я понимаю, каково студентам, особенно
+                              изучающим новый язык с нуля.
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselControls_4"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselControls_4"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls_4"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls_4"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Следующий</span>
-                </button>
               </div>
-            </div>
-            <div class="teachers-country" id="gestures">
-              <img class="teachers-country__flag" src="./assets/img/sign_language.svg" alt="Sign Language" />
-              <h5 class="teachers-country__language">
-                Русский жестовый язык (РЖЯ)
-              </h5>
-            </div>
-            <div class="teachers-box">
-              <div id="carouselControls_5" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item carousel-item-gestures active">
-                    <div class="d-block w-100">
-                      <div class="teachers-box_inner">
-                        <div class="teachers-box__name">
-                          <span class="teacher gestures" id="teacher-18">Алексей Знаменский</span>
-                        </div>
-                        <div class="teachers-box__social-net">
-                          <a class="teachers-box__link" href=" https://www.facebook.com/alexey.znamenskiy.5"
-                            target="_blank"><img src="./assets/img/fb.svg" alt="FB" /></a>
-                          <a class="teachers-box__link" href=" https://vk.com/id25817489" target="_blank"><img
-                              src="./assets/img/vk.svg" alt="vk" /></a>
-                        </div>
-                        <div class="teachers-box__language">
-                          Преподает: <span>РЖЯ</span>
-                        </div>
-                        <div class="teachers-box__info">
-                          <p>
-                            О себе: Выпускник ВГИКа, актер и режиссер. Алексей
-                            ведет курсы РЖЯ в школе уже около 4 лет.
-                            Прочитайте пост про занятия РЖЯ в школе:
-                          </p>
-                          <p>
-                            <a class="link" href="http://bit.ly/2w0Z4BR" target="_blank">http://bit.ly/2w0Z4BR</a>
-                          </p>
+              <div class="teachers-country" id="gestures">
+                <img
+                  class="teachers-country__flag"
+                  src="./assets/img/sign_language.svg"
+                  alt="Sign Language"
+                />
+                <h5 class="teachers-country__language">
+                  Русский жестовый язык (РЖЯ)
+                </h5>
+              </div>
+              <div class="teachers-box">
+                <div
+                  id="carouselControls_5"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-gestures active">
+                      <div class="d-block w-100">
+                        <div class="teachers-box_inner">
+                          <div class="teachers-box__name">
+                            <span class="teacher gestures" id="teacher-18"
+                              >Алексей Знаменский</span
+                            >
+                          </div>
+                          <div class="teachers-box__social-net">
+                            <a
+                              class="teachers-box__link"
+                              href=" https://www.facebook.com/alexey.znamenskiy.5"
+                              target="_blank"
+                              ><img src="./assets/img/fb.svg" alt="FB"
+                            /></a>
+                            <a
+                              class="teachers-box__link"
+                              href=" https://vk.com/id25817489"
+                              target="_blank"
+                              ><img src="./assets/img/vk.svg" alt="vk"
+                            /></a>
+                          </div>
+                          <div class="teachers-box__language">
+                            Преподает: <span>РЖЯ</span>
+                          </div>
+                          <div class="teachers-box__info">
+                            <p>
+                              О себе: Выпускник ВГИКа, актер и режиссер. Алексей
+                              ведет курсы РЖЯ в школе уже около 4 лет.
+                              Прочитайте пост про занятия РЖЯ в школе:
+                            </p>
+                            <p>
+                              <a
+                                class="link"
+                                href="http://bit.ly/2w0Z4BR"
+                                target="_blank"
+                                >http://bit.ly/2w0Z4BR</a
+                              >
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselControls_5"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselControls_5"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls_5"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls_5"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Следующий</span>
-                </button>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="job">
-        <h2 class="section-title">Хотите работать в школе?</h2>
-        <div class="job-offer">
-          Напишите в телеграм
-          <a href=" https://t.me/lesoruble">@lesoruble</a> . Мы всегда ищем
-          новых преподавателей. А также мы заинтересованы в крутых
-          <span> методистах</span> и <span> проджект-менеджере</span>.
-          <p>
-            Если у вас есть такие друзья или знакомые — отправьте им этот
-            документ. Спасибо!
-          </p>
-        </div>
-      </section>
-    </div>
-  </main>
-  <footer>
-    <div class="container footer__conteiner">
-      <nav>
-        <ul class="footer__ul">
-          <li class="footer__li">
-            <a class="footer__a" href="public_offer.html">Публичная оферта</a>
-          </li>
-          <li class="footer__li">
-            <a class="footer__a" href="privacy_policy.html">Политика конфиденциальности</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </footer>
-  <script src="./assets/js/teacher.js"></script>
-  <script src="assets/styles/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-    crossorigin="anonymous"></script>
-</body>
-
+        </section>
+        <section class="job">
+          <h2 class="section-title">Хотите работать в школе?</h2>
+          <div class="job-offer">
+            Напишите в телеграм
+            <a href=" https://t.me/lesoruble">@lesoruble</a> . Мы всегда ищем
+            новых преподавателей. А также мы заинтересованы в крутых
+            <span> методистах</span> и <span> проджект-менеджере</span>.
+            <p>
+              Если у вас есть такие друзья или знакомые — отправьте им этот
+              документ. Спасибо!
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container footer__container">
+        <nav>
+          <ul class="footer__ul">
+            <li class="footer__li">
+              <a class="footer__a" href="public_offer.html">Публичная оферта</a>
+            </li>
+            <li class="footer__li">
+              <a class="footer__a" href="privacy_policy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="./assets/js/teacher.js"></script>
+    <script src="assets/styles/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

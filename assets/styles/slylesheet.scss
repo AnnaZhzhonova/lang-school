@@ -50,7 +50,7 @@ img {
   display: none;
 }
 
-.header__conteiner {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,7 +61,7 @@ img {
   padding: 20px;
 }
 
-.header__conteiner--border {
+.header__container--border {
   border-bottom: 2px solid rgb(221, 217, 217);
 }
 
@@ -77,7 +77,7 @@ img {
 }
 
 .header__a:hover {
-  color: red;
+  color: #58C8E9;
 }
 
 .header__a {
@@ -111,7 +111,7 @@ img {
 }
 
 //main
-.main__conteiner {
+.main__container {
   max-width: 1140px;
   height: 100%;
   margin: 0 auto;
@@ -123,7 +123,7 @@ img {
   max-width: 100%;
 }
 
-.main__conteinerflex {
+.main__containerflex {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -165,20 +165,17 @@ img {
   @include font-36;
   text-decoration: none;
   color: black;
+  border-bottom: 4px solid transparent;
+  width: 100%;
 }
 
 .main__a:hover {
   color: black;
-  border-bottom: 4px solid red;
-}
-
-.main__a_redline:hover {
-  color: red;
-  border-bottom: 2px solid red;
+  border-bottom: 4px solid #58C8E9;
 }
 
 //footer
-.footer__conteiner {
+.footer__container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -197,7 +194,7 @@ img {
 }
 
 .footer__a:hover {
-  color: red;
+  color: #58C8E9;
 }
 
 .footer__a {
@@ -715,11 +712,8 @@ img {
   }
 
   .main__a {
-    @include font-30;
-  }
-
-  .main__a_redline {
-    @include font-30;
+    @include font-27;
+    padding-left: 25px;
   }
 
   .main__text {
@@ -735,7 +729,7 @@ img {
     display: none
   }
 
-  .header__conteiner {
+  .header__container {
     flex-direction: row-reverse;
   }
 
@@ -844,6 +838,7 @@ img {
   //Footer
   .footer__li {
     @include font-13;
+    padding: 10px;
   }
 
   //Hero
@@ -854,8 +849,8 @@ img {
 
   .main__h1 {
     margin-bottom: 10px;
-    font-size: 45px;
-    line-height: 70px;
+    font-size: 57px;
+    line-height: 90px;
   }
 
   .main__text {
@@ -917,5 +912,134 @@ img {
     bottom: -30px;
     z-index: -1;
   }
-
 }
+@media screen and (max-width:445px) {
+   //Hero
+   .main__h1text {
+    width: 100%;
+    background-size: 60%;
+  }
+
+  .main__h1 {
+    margin-bottom: 10px;
+    font-size: 38px;
+    line-height: 60px;
+  }
+
+  .main__text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:1150px) {
+
+  .navigation,
+  .telegram__icon-box,
+  .main__menu1 {
+    display: none
+  }
+
+  .header__container {
+    flex-direction: row-reverse;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+    display: none;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .menu__btn>span,
+  .menu__btn>span::before,
+  .menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: $color-gray;
+
+  }
+
+  .menu__btn>span::before {
+    content: '';
+    top: -10px;
+  }
+
+  .menu__btn>span::after {
+    content: '';
+    top: 10px;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #FFF;
+    z-index: 2;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+
+  .header__a {
+    display: block;
+    position: relative;
+    margin: 15px 0 15px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  #menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__btn>span,
+  .menu__btn>span::before,
+  .menu__btn>span::after {
+    transition-duration: .25s;
+  }
+
+  .menu__box {
+    transition-duration: .25s;
+  }
+
+  .header__a {
+    transition-duration: .25s;
+  }}
