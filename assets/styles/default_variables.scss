@@ -31,7 +31,7 @@ $font: 'Noto Sans';
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 70px;
+    font-size: 65px;
 }
 @mixin font-h111 {
     font-family: 'Noto Sans';
@@ -67,11 +67,17 @@ $font: 'Noto Sans';
     font-weight: 400;
     font-size: 30px;
 }
+@mixin font-27 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;}
+
 @mixin font-24 {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;}
+    font-size: 24px;}
 
 @mixin font-20 {
     font-family: 'Noto Sans';
